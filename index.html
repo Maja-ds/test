@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+
+    <meta charset="utf-8">
+    <title>Personensuche</title>
+
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.8/css/jquery.dataTables.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mark.js/dist/jquery.mark.min.js"></script>
+    <script src="https://cdn.datatables.net/plug-ins/1.13.6/features/mark.js/datatables.mark.js"></script>
+
+    <!-- Deine Daten -->
+    <link rel="stylesheet" href="styles_tab.css">
+    <script src="data_emi_100.js"></script>
+    <script src="main.js" defer></script>
+
+</head>
+
+<body>
+    <h1 align="center">Emigration und Exil von Wissenschaftlern und Ingenieuren 1930-1950</h1>
+    <nav class="navbar-center navbar-inverse">
+        <div class="container-fluid">
+            <ul class="nav">
+                <li><a href="./index.html">Startseite</a></li>
+
+                <li><a href="Laender.html">Länder</a></li>
+                <li><a href="Disziplinen.html">Disziplinen</a></li>
+                <li><a href="StrukturelleGesichtspunkte.html">Strukturelles</a></li>
+                <li><a href="Kartenvergleich.html">Karten</a></li>
+                <li><a href="Literatur.html">Literatur</a></li>
+                <li><a href="Links.html">Links</a></li>
+                <li class="active"><a href="Personen.html">Personen</a></li>
+                <li><a href="Glossar.html">Glossar</a></li>
+                <li><a href="Impressum.html">Impressum</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <h2 align="center">Personensuche</h2>
+    <p align="center">
+    <p>
+        Aus der Bearbeitung von Frau Bujak im Rahmen ihrer Masterarbeit ist aus 
+        dem <i>Biographischen Handbuch der deutschsprachigen Emigration nach 1933</i> 
+        die hier verfügbare Personendatenbank hervorgegangen. Das Handbuch, 
+        erstmals 1980/83 veröffentlicht, enthält wertvolle Informationen zu rund 8.000 Emigranten
+        und ist bis heute eine bedeutende Quelle der Emigrationsforschung. 
+        Dank der freundlichen Genehmigung von De Gruyter ist die Datenbank 
+        nun kostenfrei öffentlich zugänglich.
+    </p>
+    <p>
+        Das Handbuch wurde von einem deutsch-englischsprachigen Team erstellt, 
+        die Einträge sind daher häufig nicht einheitlich. 
+        Um dennoch eine gezielte Recherche zu ermöglichen, wurden mehrere Filter
+        implementiert, die eine Suche auch in nicht standardisierten historischen
+        Daten erlauben.
+    </p>
+    <p>
+        Nutzerinnen und Nutzer können die gesamte Datenbank durchsuchen
+        oder gezielt die <b>Kerngruppe</b> auswählen. Diese umfasst Personen aus
+        den <b>Geisteswissenschaften</b> und den <b>Exakten Wissenschaften</b>,
+        einschließlich <b>Ingenieuren</b> und <b>Technikern</b>.
+        Die Daten der Kerngruppe werden fortlaufend gepflegt und erweitert,
+        sowohl durch die Ergänzung fehlender Angaben zu bereits erfassten
+        Personen als auch durch die Aufnahme neuer Personen.
+        In diesem Zusammenhang wurden auch einige im <i>Biographischen Handbuch</i> noch
+        fehlende Todesjahre sowie weitere Angaben auf Grundlage von Recherchen
+        von Dr. Michael Rupp, Ingrid Eisenbraun, Prof. Dr. Detlef Garz (Kiel) und
+        Maja Lichman in der Datenbank ergänzt.
+    </p>
+    <p>
+        Detaillierte Informationen zur Struktur der Datenbank, 
+        zu den Besonderheiten der enthaltenen Daten sowie zur Anwendung
+        und Nutzung der verschiedenen Filtermöglichkeiten finden
+        Sie im <a href="Datenbeschreibung.html" class="interner-link">Datenbankhandbuch</a>.
+    </p>
+    <br />
+    <div id="filter-panel">
+        <div class="top">
+            <div class="radio-container">
+                <label><input type="radio" name="mode" value="alle" checked> <b>Alle</b> im Datenbank erfasste Personen</label>
+                <label><input type="radio" name="mode" value="kern"> <b>Kerngruppe</b> (Exakte Wissenschaften inklusive Ingenieure und Techniker sowie Geisteswissenschaften)</label>
+            </div>
+            <div class="vertical-line"></div>
+            <div class="result-box">
+                <span id="rowCount" class="result-number">0</span>
+                <span class="result-label">Treffer gefunden</span>
+            </div>
+        </div>
+        <div class="filter-line"></div>
+        <div id="activeFilters" class="active-filters"></div>
+        <!-- Berufsgruppe Dropdown -->
+        <div class="filter-group">
+            <div id="berufsgruppeDropdown" class="dropdown-filter"></div>
+            <!-- Bereich Dropdown -->
+            <select id="bereichFilter" class="dropdown-filter" style="display:none">
+                <option value="Alle">Alle Berufsgruppen</option>
+                <option value="Geisteswissenschaften">Geisteswissenschaften</option>
+                <option value="Exakte Wissenschaften">Exakte Wissenschaften</option>
+            </select>
+            <div id="disziplinDropdown" class="dropdown-filter"></div>
+            <div id="religionDropdown" class="dropdown-filter">
+                <button type="button" class="filter-btn">Religion wählen</button>
+                <div class="filter-box">
+                    <label><input type="checkbox" name="religionFilter" value="all" checked> Alle</label><br>
+                    <label><input type="checkbox" name="religionFilter" value="Jüdisch"> Jüdisch</label><br>
+                    <label><input type="checkbox" name="religionFilter" value="Christlich"> Christlich</label><br>
+                    <label><input type="checkbox" name="religionFilter" value="Freikirchen"> Freikirchen</label><br>
+                    <label><input type="checkbox" name="religionFilter" value="Andere"> Andere</label><br>
+                    <label><input type="checkbox" name="religionFilter" value="Konfessionslos"> Konfessionslos</label><br>
+                    <label><input type="checkbox" name="religionFilter" value="k.A."> k.A.</label><br>
+                </div>
+            </div>
+            <div id="landDropdown" class="dropdown-filter">
+                <button type="button" class="filter-btn">Land wählen</button>
+            </div>
+            <div id="emigrationslandDropdown" class="dropdown-filter">
+                <button type="button" class="filter-btn">Zielland wählen</button>
+            </div>
+
+        </div>
+
+        <div class="filter-group year-filters">
+
+            <div class="year-fields">
+
+                <label>
+                    <span>Geburtsjahr</span>
+                    <input type="text" class="yearFilter" data-column="Geburtsjahr">
+                </label>
+
+                <label>
+                    <span>Sterbejahr</span>
+                    <input type="text" class="yearFilter" data-column="Sterbejahr">
+                </label>
+
+                <label>
+                    <span>Ausreisejahr</span>
+                    <input type="text" class="yearFilter" data-column="Ausreisejahr">
+                </label>
+
+                <div id="infoContainer">
+                    <button id="infoButton">Hinweis zur Jahreseingabe</button>
+                    <div id="infoPopup" class="info-popup" style="display:none;">
+                        • Exaktes Jahr: 1905<br>
+                        • Mehrere exakte Jahre: 1933, 1935, 1937<br>
+                        • Früher oder später: &gt;1900 oder &lt;1900<br>
+                        • Zeitraum: &gt;1900 &lt;1930
+                    </div>
+                </div>
+
+            </div>
+
+            <button id="resetFilters">Filter zurücksetzen</button>
+
+        </div>
+    </div>
+    <br /><br />
+    <div class="table-container">
+
+        <table id="demo" class="display" style="width:100%">
+
+            <thead>
+
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Beruf</th>
+                    <th>Geboren</th>
+                    <th>Gestorben</th>
+                    <th>Religion</th>
+                    <th>Ausreiseort</th>
+                    <th>Emigrationsweg</th>
+                </tr>
+
+                <tr>
+                    <th><input type="text" placeholder=""></th>
+                    <th><input type="text" placeholder=""></th>
+                    <th><input type="text" placeholder=""></th>
+                    <th><input type="text" placeholder=""></th>
+                    <th><input type="text" placeholder=""></th>
+                    <th><input type="text" placeholder=""></th>
+                    <th><input type="text" placeholder=""></th>
+                    <th><input type="text" placeholder=""></th>
+                </tr>
+
+            </thead>
+
+            <tbody></tbody>
+
+        </table>
+
+    </div>
+    <script>
+        $(document).ready(function () {
+
+            const $button = $('#infoButton');
+            const $popup = $('#infoPopup');
+
+            $button.on('click', function (e) {
+                e.stopPropagation();
+                $popup.toggle();
+            });
+
+            $(document).on('click', function () {
+                $popup.hide();
+            });
+
+            $popup.on('click', function (e) {
+                e.stopPropagation();
+            });
+
+        });
+    </script>
+    <div id="loadingOverlay">
+        <div class="overlayBox">
+            <div class="spinner"></div>
+            <div class="overlayText">Bitte warten…</div>
+        </div>
+    </div>
+</body>
+</html>
