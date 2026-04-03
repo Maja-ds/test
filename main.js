@@ -50,8 +50,7 @@
                 },
                 autoWidth: false,
                 dom: "<'row'<'col-sm-4'l><'col-sm-4'p>>" + "t" + "<'row'<'col-sm-12'p>>",
-                columns: [
-                    { data: "PersonID" },
+                columns: [ 
                     {
                         data: "Name",
                         render: function (data, type, row) {
