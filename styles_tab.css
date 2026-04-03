@@ -79,14 +79,14 @@ p {
 /*Tabelle*/
 
 .table-container {
-    width: 98%;
+    width: 100%;
     display: block;
     background-color: white;
     border-radius: 4px;
     margin-left: auto;
     margin-right: auto;
     border: 1px solid rgba(0,0,0,0.2);
-     overflow-x: auto;
+    overflow-x: auto;
 }
 
 #demo {
@@ -288,11 +288,11 @@ div.dataTables_length select {
     }
 /*Filterpanel*/
 #filter-panel {
-    width: calc(98% - 40px);
+    width: 100%;
     background-color: white; /* etwas dunkleres Grau */
     border: 1px solid rgba(0,0,0,0.2);
     border-radius: 4px;
-    padding: 20px 20px;
+    padding: 20px;
     font-weight: 500;
     display: flex;
     flex-direction: column;
