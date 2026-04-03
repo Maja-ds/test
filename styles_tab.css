@@ -90,7 +90,6 @@ p {
 }
 
 #demo {
-    width: 100%;
     border-spacing: 0;
     display: table !important;
     margin-left: auto;
