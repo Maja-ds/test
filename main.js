@@ -39,6 +39,7 @@
             let table = $('#demo').DataTable({
                 data: daten,
                 pageLength: 10,
+                order: [[0, 'asc']], 
                 orderCellsTop: true,
                 mark: true,
                 language: {
@@ -651,7 +652,7 @@
                 $('#demo thead input').val('');
                 table.columns().search('');
 
-                table.order([[1, 'asc']]).draw();
+                table.order([[0, 'asc']]).draw();
             }
 
             $('#resetFilters').on('click', function () {
