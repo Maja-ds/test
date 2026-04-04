@@ -48,7 +48,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: yellow;
+    color: red;
 }
 .text-container {
     max-width: 90%; /* Textbreite */
@@ -729,6 +729,11 @@ table.dataTable thead .sorting_desc:after {
     #filter-panel .filter-group.year-filters > * {
         flex: 0 1 auto;
     }
+.year-fields {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
 
 
 @media (max-width: 1024px) {
@@ -761,6 +766,13 @@ table.dataTable thead .sorting_desc:after {
         #filter-panel .top > *,
         #filter-panel .filter-group > *,
         #filter-panel .filter-group.year-filters > * {
+            flex: 1 1 100%;
+        }
+    .year-fields {
+        flex-direction: column;
+    }
+
+        .year-fields > * {
             flex: 1 1 100%;
         }
 }
