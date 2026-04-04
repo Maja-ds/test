@@ -1,14 +1,18 @@
 /*Body*/
 body {
     background-color: white;
-    margin: 20px;
     font-family: Arial;
+}
+nav .container-fluid {
+    max-width: 100%; /* maximale Breite */
+    margin: 0 auto; /* zentriert */
 }
 
 /*Navbar*/
 .navbar-nav > .active > a {
     background-color: #d5dbdb;
 }
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -16,9 +20,9 @@ ul {
     overflow: hidden;
     background-color: #333333;
 }
+
 li {
     float: left;
-    font-size: 25px;
 }
 
     li a {
@@ -42,19 +46,17 @@ li {
         background-color: #111111;
     }
 
-/*Überschriften*/
 h1 {
-    font-weight: 400;
+    font-weight: 500;
+    color: red;
 }
-h2 {
-    font-weight: 400;
-    font-size: 33px;
+.text-container {
+    max-width: 90%; /* Textbreite */
+    margin: 0 auto; /* zentrieren */
+    padding: 20px; /* Innenabstand */
 }
-/*Text*/
 p { 
-    margin: 10px auto; /* Block wird zentriert */
-    font-size: 17px;
-    line-height: 300%;
+    line-height: 200%;
     text-align: justify;
     text-justify: inter-word;
     font-family: Arial;
@@ -80,20 +82,21 @@ p {
 
 .table-container {
     width: 100%;
+    max-width: max-content;
     display: block;
     background-color: white;
     border-radius: 4px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 0 auto 40px auto;
     border: 1px solid rgba(0,0,0,0.2);
     overflow-x: auto;
+    table-layout: auto;
 }
 
 #demo {
+    width: 100%;
+    width: auto;
     border-spacing: 0;
     display: table !important;
-    margin-left: 0px;
-    margin-right: 0px;
     border-collapse: separate; /* wichtig für saubere Linien */
     border-top: 2px solid #6495ED;
     border-bottom: 2px solid #6495ED;
@@ -118,19 +121,12 @@ thead input {
 
 #demo thead tr:first-child {
     background-color: white;
-    position: sticky;
-    top: 0px; /* Höhe deiner Headerzeile */
-    z-index: 999;
     border-right: 1px solid white;
 }
 
 
 #demo thead tr:nth-child(2) th {
-    position: sticky;
-    top: 41px; /* Höhe der Headerzeile */
-    font-size: 16px;
     font-family: Arial;
-    z-index: 999;
     background-color: white;
     border-top: none !important;
 }
@@ -288,18 +284,18 @@ div.dataTables_length select {
     }
 /*Filterpanel*/
 #filter-panel {
-    width: 100%;
-    background-color: white; /* etwas dunkleres Grau */
+    box-sizing: border-box;
+    background-color: white;
     border: 1px solid rgba(0,0,0,0.2);
     border-radius: 4px;
-    padding: 20px;
+    padding: 20px 20px;
     font-weight: 500;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     gap: 10px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 20px;
     margin-top: 20px;
 }
@@ -728,6 +724,30 @@ table.dataTable thead .sorting_desc:after {
     color: #6495ED;
     opacity: 1 !important;
 }
+@media (max-width: 1024px) {
+    .table-container {
+        padding: 8px 16px;
+    }
+
+    #demo th, #demo td {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+}
+
+/* --- Responsive für Mobilgeräte --- */
+@media (max-width: 768px) {
+    .table-container {
+        padding: 5px 10px;
+    }
+
+    #demo th, #demo td {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+}
+
+
 
 
 
