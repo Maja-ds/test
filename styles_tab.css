@@ -500,41 +500,20 @@ input[type="radio"] {
 
 
 /* Panelelemente vierte Zeile */
-.year-filters {
-    display: flex;
-    align-items: flex-end; /* alles unten ausrichten */
-    gap: 12px;
-}
-
-/* Grid nur für Inputs */
 .year-fields {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr) auto; /* 3 Inputs + Info */
-    gap: 12px;
-    align-items: end; /* alle Kinder unten ausrichten */
-}
-
-    /* Labels vertikal ausrichten */
-    .year-fields label {
-        display: flex;
-        flex-direction: column; /* Text über Input */
-    }
-
-/* Info-Button nach unten ausrichten */
-#infoContainer {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end; /* Button unten in der Grid-Zelle */
+    align-items: flex-end;
+    gap: 12px;
+    width: 100%;
 }
 
-/* Reset-Button ganz rechts */
+
 #resetFilters {
     margin-left: auto;
-    white-space: nowrap;
-    align-self: flex-end; /* am unteren Rand der Flex-Zeile */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-
 
 .yearFilter {
     padding: 6px 4px;
