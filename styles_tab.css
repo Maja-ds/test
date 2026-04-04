@@ -48,7 +48,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: red;
+    color: green;
 }
 .text-container {
     max-width: 90%; /* Textbreite */
@@ -744,6 +744,14 @@ table.dataTable thead .sorting_desc:after {
     #demo th, #demo td {
         padding: 6px 10px;
         font-size: 14px;
+    }
+    #filter-panel .top > *,
+    #filter-panel .filter-group > *,
+    #filter-panel .filter-group.year-filters > * {
+        flex: 1 1 calc(33.333% - 8px);
+    }
+    .year-fields > * {
+        flex: 1 1 calc(33.333% - 8px);
     }
 }
 
