@@ -48,7 +48,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: green;
+    color: yellow;
 }
 .text-container {
     max-width: 90%; /* Textbreite */
@@ -718,19 +718,18 @@ table.dataTable thead .sorting_desc:after {
 }
 #filter-panel .top,
 #filter-panel .filter-group,
-#filter-panel .year-filters {
+#filter-panel .filter-group.year-filters {
     display: flex;
-    flex-wrap: wrap; /* erlaubt Umbruch auf kleineren Bildschirmen */
-    gap: 15px; /* Abstand zwischen Elementen */
+    flex-wrap: wrap;
+    gap: 12px;
     align-items: flex-start;
 }
-
-    /* Desktop: evtl. max 100% Breite pro Element nicht nötig */
-    #filter-panel .top > div,
+    #filter-panel .top > *,
     #filter-panel .filter-group > *,
-    #filter-panel .year-filters > * {
-        flex: 1 1 auto; /* flexibel wachsen / schrumpfen */
+    #filter-panel .filter-group.year-filters > * {
+        flex: 0 1 auto;
     }
+
 
 @media (max-width: 1024px) {
     .table-container {
@@ -755,14 +754,14 @@ table.dataTable thead .sorting_desc:after {
     }
     #filter-panel .top,
     #filter-panel .filter-group,
-    #filter-panel .year-filters {
+    #filter-panel .filter-group.year-filters {
         flex-direction: column;
     }
 
-        #filter-panel .top > div,
+        #filter-panel .top > *,
         #filter-panel .filter-group > *,
-        #filter-panel .year-filters > * {
-            flex: 1 1 100%; /* volle Breite */
+        #filter-panel .filter-group.year-filters > * {
+            flex: 1 1 100%;
         }
 }
 
