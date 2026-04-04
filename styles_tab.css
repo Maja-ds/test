@@ -48,7 +48,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: red;
+    color: green;
 }
 .text-container {
     max-width: 90%; /* Textbreite */
@@ -81,7 +81,8 @@ p {
 /*Tabelle*/
 
 .table-container {
-    width: 100%;
+    width: 98%;
+    position: relative;
     max-width: max-content;
     display: block;
     background-color: white;
@@ -266,8 +267,7 @@ div.dataTables_length select {
         width: max-content;
         overflow-wrap: break-word;
         font-family: Arial;
-        font-size: 16px;
-        max-height: 80vh;
+        max-height: 22vh;
         overflow-y: auto;
         background: white;
         color: #454545;
@@ -276,7 +276,7 @@ div.dataTables_length select {
         border-radius: 4px;
         box-shadow: 0 4px 10px rgba(0,0,0,0.15);
         z-index: 9999;
-        line-height: 1.6;
+        line-height: 1.5;
     }
 
     .tooltip-name.active .info-text {
@@ -285,6 +285,7 @@ div.dataTables_length select {
 /*Filterpanel*/
 #filter-panel {
     box-sizing: border-box;
+    width: 98%;
     background-color: white;
     border: 1px solid rgba(0,0,0,0.2);
     border-radius: 4px;
@@ -301,8 +302,7 @@ div.dataTables_length select {
 }
 
 
-    #filter-panel label {
-        font-size: 15px; 
+    #filter-panel label { 
         color: black;
         font-family: Arial;
     }
@@ -571,7 +571,7 @@ input[type="radio"] {
 #infoPopup {
     position: absolute;
     top: calc(100% + 3px);
-    left: 0;
+    right: 0;
     min-width: 300px;
     background: white;
     border: 1px solid #ccc;
@@ -686,14 +686,6 @@ mark {
     margin: 2px -20px;
 }
 
-
-.vertical-line {
-    width: 2px; /* Dicke der Linie */
-    height: 60px; /* gewünschte Höhe */
-    background: #6495ED; /* Farbe */
-    margin-top: -8px;
-    flex-shrink: 0; /* Linie nicht zusammenziehen */
-}
 table.dataTable thead .sorting:before {
     content: "▲";
     font-size: 10px;
@@ -724,6 +716,22 @@ table.dataTable thead .sorting_desc:after {
     color: #6495ED;
     opacity: 1 !important;
 }
+#filter-panel .top,
+#filter-panel .filter-group,
+#filter-panel .year-filters {
+    display: flex;
+    flex-wrap: wrap; /* erlaubt Umbruch auf kleineren Bildschirmen */
+    gap: 15px; /* Abstand zwischen Elementen */
+    align-items: flex-start;
+}
+
+    /* Desktop: evtl. max 100% Breite pro Element nicht nötig */
+    #filter-panel .top > div,
+    #filter-panel .filter-group > *,
+    #filter-panel .year-filters > * {
+        flex: 1 1 auto; /* flexibel wachsen / schrumpfen */
+    }
+
 @media (max-width: 1024px) {
     .table-container {
         padding: 8px 16px;
@@ -745,6 +753,17 @@ table.dataTable thead .sorting_desc:after {
         padding: 4px 8px;
         font-size: 12px;
     }
+    #filter-panel .top,
+    #filter-panel .filter-group,
+    #filter-panel .year-filters {
+        flex-direction: column;
+    }
+
+        #filter-panel .top > div,
+        #filter-panel .filter-group > *,
+        #filter-panel .year-filters > * {
+            flex: 1 1 100%; /* volle Breite */
+        }
 }
 
 
