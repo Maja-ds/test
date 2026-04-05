@@ -48,7 +48,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #BF40BF;
+    color: #953553;
 }
 .text-container {
     max-width: 80%; /* Textbreite */
@@ -724,36 +724,34 @@ table.dataTable thead .sorting_desc:after {
     opacity: 1 !important;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
 
-
-@media (max-width: 1024px) {
-    /* Allgemeine Filter-Gruppen */
-    #filter-panel .top > *,
-    #filter-panel .filter-group > * {
-        flex: 1 1 calc(33.333% - 8px); /* max. 3 Elemente pro Reihe */
+    #filter-panel {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        align-items: start;
     }
 
-    /* Jahresfilter Inputs nebeneinander */
-    .year-fields > label {
-        flex: 1 1 calc(33.333% - 8px);
+    /* oben volle Breite */
+    .top,
+    .filter-line,
+    .active-filters {
+        grid-column: 1 / -1;
     }
 
-    /* Info + Reset jeweils eigene Reihe */
-    #infoContainer,
-    #resetFilters {
-        flex: 0 0 100%; /* ganze Breite der Zeile */
-        display: flex;
-        align-items: flex-end;
-        margin-top: 8px;
+    /* links */
+    .filter-group {
+        grid-column: 1;
+        flex-direction: column;
+        align-items: stretch;
     }
 
-    #infoContainer {
-        justify-content: flex-start; /* linksbündig */
+    /* rechts */
+    .year-fields {
+        grid-column: 2;
     }
 
-    #resetFilters {
-        justify-content: flex-end; /* rechtsbündig */
-    }
 }
 
 /* --- Responsive für Mobilgeräte --- */
