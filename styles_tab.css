@@ -48,7 +48,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: red;
+    color: yellow;
 }
 .text-container {
     max-width: 80%; /* Textbreite */
@@ -724,6 +724,15 @@ table.dataTable thead .sorting_desc:after {
     opacity: 1 !important;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    #filter-panel {
+        width: 50vw;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+}
 
 
 /* --- Responsive für Mobilgeräte --- */
