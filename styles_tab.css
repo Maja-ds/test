@@ -48,7 +48,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: red;
+    color: blue;
 }
 .text-container {
     max-width: 80%; /* Textbreite */
@@ -356,6 +356,9 @@ input[type="radio"] {
 /*Panelelemente zweite Zeile*/
 .active-filters {
     margin-top: 4px;
+    display: flex;
+    flex-wrap: wrap; /* Zeilen umbrechen */
+    gap: 6px 4px; /* 6px vertikal, 4px horizontal */
 }
 
     .active-filters span {
@@ -817,7 +820,7 @@ table.dataTable thead .sorting_desc:after {
 .text-container {
     max-width: 98%; /* Textbreite */
     margin: 0 auto; /* zentrieren */
-    padding: 5px; /* Innenabstand */
+    padding: 10px; /* Innenabstand */
 }
 
     .filter-group button,
