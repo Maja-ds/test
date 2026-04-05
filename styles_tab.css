@@ -48,7 +48,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #F5276C;
+    color: #800020;
 }
 .text-container {
     max-width: 80%; /* Textbreite */
@@ -843,14 +843,17 @@ table.dataTable thead .sorting_desc:after {
         }
     
     #infoPopup {
-        position: static;      /* nicht mehr absolut */
-        width: 100%;           /* volle Breite des Containers */
-        max-width: 100%;       /* sicherstellen, dass es nie breiter wird */
-        margin-top: 8px;       /* Abstand über dem Popup */
-        padding: 10px 15px;    /* etwas kleinere Polsterung */
-        box-sizing: border-box; /* Padding wird zur Breite gerechnet */
-        right: auto;           /* überschreibt Desktop */
-        left: 0;               /* optional, falls innerhalb Container */
+        position: absolute;         /* bleibt unter dem Button */
+        top: calc(100% + 3px);
+        left: 0;                    /* links ausgerichtet am Button */
+        right: 0;                   /* rechts nicht über Bildschirm hinaus */
+        min-width: 0;               /* entfernt die feste Min-Breite */
+        max-width: 95vw;            /* maximal 95% der Viewport-Breite */
+        width: auto;                /* automatisch je nach Inhalt */
+        box-sizing: border-box;     /* Padding wird berücksichtigt */
+        white-space: normal;        /* Zeilen umbrechen */
+        word-wrap: break-word;      /* lange Wörter umbrechen */
+        padding: 10px 15px;         /* angenehme Polsterung */
     }
 
 }
