@@ -779,7 +779,6 @@ table.dataTable thead .sorting_desc:after {
     .filter-btn {
         width: 100%;
         text-align: center;
-        display: block;
     }
 
     /* Reset Button */
