@@ -841,5 +841,8 @@ table.dataTable thead .sorting_desc:after {
         .filter-group select::-ms-expand {
             display: none; /* falls IE/Edge */
         }
+        p {
+        text-align: left;  /* linksbündig auf Mobil */
+    }
 
 }
