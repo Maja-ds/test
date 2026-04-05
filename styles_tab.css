@@ -48,7 +48,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #E97451;
+    color: red;
 }
 .text-container {
     max-width: 80%; /* Textbreite */
@@ -724,122 +724,7 @@ table.dataTable thead .sorting_desc:after {
     opacity: 1 !important;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
 
-    #filter-panel {
-        width: 50%;
-        margin-left: 0;
-        margin-right: auto;  /* linksbündig */
-    }
-
-}
-
-    .top,
-    .filter-group,
-    .year-fields {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 10px;
-    }
-
-    /* alle Elemente volle Breite */
-    .filter-group > *,
-    .year-fields > *,
-    .top > * {
-        width: 100%;
-    }
-
-    /* Buttons gleich breit */
-    #infoButton,
-    #bereichFilter,
-    #resetFilters,
-    .dropdown-filter button,
-    .filter-btn {
-        width: 100%;
-        text-align: center;
-    }
-
-    /* Reset Button */
-    #resetFilters {
-        margin-left: 0;
-        display: block;
-    }
-
-    /* Result Box links + eine Zeile */
-    .result-box {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-start;
-        gap: 6px;
-    }
-
-    /* Linie unter Radio */
-    .radio-container {
-        border-bottom: 1px solid #ddd;
-        padding-bottom: 12px;
-        margin-bottom: 12px;
-    }
-     .filter-group {
-     gap: 18px; /* z.B. statt 10px */
- }
- .radio-container label {
-     line-height: 1.8;
-     display: block;
-     margin-bottom: 6px;
- }
-.text-container {
-    max-width: 98%; /* Textbreite */
-    margin: 0 auto; /* zentrieren */
-    padding: 20px; /* Innenabstand */
-}
-
-    .filter-group button,
-    .filter-group select,
-    .dropdown-filter button {
-        text-align: center; /* Text zentriert */
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    /* Optional: bei select im Firefox */
-    .filter-group select {
-        -moz-appearance: none;
-        text-align-last: center; /* zentriert den ausgewählten Text */
-    }
-
-        /* Optional: bei Chrome/Safari */
-        .filter-group select::-ms-expand {
-            display: none; /* falls IE/Edge */
-        }
-    #infoPopup {
-    min-width: 0;
-    max-width: 95vw;
-}
-    
-        .tooltip-name .info-text {
-        left: 0;                 /* nicht mehr rechts rauslaufen */
-        transform: translateY(-100%);
-        
-        width: 90vw;             /* fast Bildschirmbreite */
-        max-width: 90vw;         /* harte Begrenzung */
-        min-width: 0;
-
-        max-height: 40vh;        /* begrenzte Höhe */
-        overflow-y: auto;
-
-        white-space: normal;     
-        word-break: break-word;
-        overflow-wrap: break-word;
-
-        padding: 10px 14px;      /* etwas kompakter */
-    }
-
-}
 
 /* --- Responsive für Mobilgeräte --- */
 @media (max-width: 768px) {
