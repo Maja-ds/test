@@ -48,10 +48,10 @@ li {
 
 h1 {
     font-weight: 500;
-    color: green;
+    color: yellow;
 }
 .text-container {
-    max-width: 90%; /* Textbreite */
+    max-width: 80%; /* Textbreite */
     margin: 0 auto; /* zentrieren */
     padding: 20px; /* Innenabstand */
 }
@@ -311,6 +311,8 @@ div.dataTables_length select {
 .top {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
 }
 
 .radio-group {
@@ -378,6 +380,7 @@ input[type="radio"] {
     gap: 15px; /* Abstand zwischen Elementen */
     margin-bottom: 15px;
 }
+
 
 /* Wenn Dropdown geöffnet, sichtbar machen */
 .dropdown-filter.show .filter-box {
@@ -502,15 +505,17 @@ input[type="radio"] {
 /* Panelelemente vierte Zeile */
 .year-fields {
     display: flex;
+    flex-direction: row;
     align-items: flex-end;
-    gap: 12px;
-    width: 100%;
+    gap: 15px;
 }
 
 
 #resetFilters {
     margin-left: auto;
 }
+
+
 
 .yearFilter {
     padding: 6px 4px;
@@ -597,13 +602,12 @@ input[type="radio"] {
     cursor: pointer;
     display: flex;
     align-items: center;
-    transition: all 0.2s ease;
 }
-
     #resetFilters:hover {
         background-color: #6348e0; /* leicht dunkler beim Hover */
         border-color: #6348e0;
         box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+     
     }
 
 #loadingOverlay {
@@ -716,24 +720,7 @@ table.dataTable thead .sorting_desc:after {
     color: #6495ED;
     opacity: 1 !important;
 }
-#filter-panel .top,
-#filter-panel .filter-group,
-#filter-panel .filter-group.year-filters {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    align-items: flex-start;
-}
-    #filter-panel .top > *,
-    #filter-panel .filter-group > *,
-    #filter-panel .filter-group.year-filters > * {
-        flex: 0 1 auto;
-    }
-.year-fields {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-}
+
 
 
 @media (max-width: 1024px) {
@@ -768,37 +755,26 @@ table.dataTable thead .sorting_desc:after {
 
 /* --- Responsive für Mobilgeräte --- */
 @media (max-width: 768px) {
-    .table-container {
-        padding: 5px 10px;
-    }
 
-    #demo th, #demo td {
-        padding: 4px 8px;
-        font-size: 12px;
-    }
-    #filter-panel .top,
-    #filter-panel .filter-group,
-    #filter-panel .filter-group.year-filters {
-        flex-direction: column;
-    }
-
-        #filter-panel .top > *,
-        #filter-panel .filter-group > *,
-        #filter-panel .filter-group.year-filters > * {
-            flex: 1 1 100%;
-        }
+    .top,
+    .filter-group,
     .year-fields {
         flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
     }
 
-        .year-fields > * {
-            flex: 1 1 100%;
-        }
+    /* Reset Button nicht nach rechts schieben */
+    #resetFilters {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    /* alle Filterelemente volle Breite */
+    .filter-group > *,
+    .year-fields > *,
+    .top > * {
+        width: 100%;
+    }
+
 }
-
-
-
-
-
-
-
