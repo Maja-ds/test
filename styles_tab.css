@@ -48,7 +48,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #CCCCFF;
+    color: #00A36C;
 }
 .text-container {
     max-width: 80%; /* Textbreite */
@@ -738,6 +738,21 @@ table.dataTable thead .sorting_desc:after {
     .active-filters {
         grid-column: 1 / -1;
     }
+        .top  {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+        .radio-container {
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 12px;
+        margin-bottom: 12px;
+    }
+     .radio-container label {
+     line-height: 1.8;
+     display: block;
+     margin-bottom: 6px;
+ }
 
     /* linke Spalte */
     .filter-group {
