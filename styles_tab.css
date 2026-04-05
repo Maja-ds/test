@@ -48,7 +48,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #800020;
+    color: #5D3FD3;
 }
 .text-container {
     max-width: 80%; /* Textbreite */
@@ -579,7 +579,7 @@ input[type="radio"] {
 #infoPopup {
     position: absolute;
     top: calc(100% + 3px);
-    right: 0;
+    left: 0;
     min-width: 300px;
     background: white;
     border: 1px solid #ccc;
@@ -841,19 +841,6 @@ table.dataTable thead .sorting_desc:after {
         .filter-group select::-ms-expand {
             display: none; /* falls IE/Edge */
         }
-    
-    #infoPopup {
-        position: absolute;         /* bleibt unter dem Button */
-        top: calc(100% + 3px);
-        left: 0;                    /* links ausgerichtet am Button */
-        right: 0;                   /* rechts nicht über Bildschirm hinaus */
-        min-width: 0;               /* entfernt die feste Min-Breite */
-        max-width: 95vw;            /* maximal 95% der Viewport-Breite */
-        width: auto;                /* automatisch je nach Inhalt */
-        box-sizing: border-box;     /* Padding wird berücksichtigt */
-        white-space: normal;        /* Zeilen umbrechen */
-        word-wrap: break-word;      /* lange Wörter umbrechen */
-        padding: 10px 15px;         /* angenehme Polsterung */
-    }
+
 
 }
