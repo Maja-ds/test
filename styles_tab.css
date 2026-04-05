@@ -48,7 +48,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: red;
+    color: #F5276C;
 }
 .text-container {
     max-width: 80%; /* Textbreite */
@@ -841,5 +841,16 @@ table.dataTable thead .sorting_desc:after {
         .filter-group select::-ms-expand {
             display: none; /* falls IE/Edge */
         }
+    
+    #infoPopup {
+        position: static;      /* nicht mehr absolut */
+        width: 100%;           /* volle Breite des Containers */
+        max-width: 100%;       /* sicherstellen, dass es nie breiter wird */
+        margin-top: 8px;       /* Abstand über dem Popup */
+        padding: 10px 15px;    /* etwas kleinere Polsterung */
+        box-sizing: border-box; /* Padding wird zur Breite gerechnet */
+        right: auto;           /* überschreibt Desktop */
+        left: 0;               /* optional, falls innerhalb Container */
+    }
 
 }
