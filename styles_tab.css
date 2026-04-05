@@ -820,7 +820,7 @@ table.dataTable thead .sorting_desc:after {
 .text-container {
     max-width: 98%; /* Textbreite */
     margin: 0 auto; /* zentrieren */
-    padding: 10px; /* Innenabstand */
+    padding: 20px; /* Innenabstand */
 }
 
     .filter-group button,
@@ -841,8 +841,5 @@ table.dataTable thead .sorting_desc:after {
         .filter-group select::-ms-expand {
             display: none; /* falls IE/Edge */
         }
-        p {
-        text-align: left;  /* linksbündig auf Mobil */
-    }
 
 }
