@@ -48,7 +48,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: green;
+    color: red;
 }
 .text-container {
     max-width: 80%; /* Textbreite */
@@ -764,35 +764,50 @@ table.dataTable thead .sorting_desc:after {
         gap: 10px;
     }
 
-    /* Reset Button */
+    /* Reset Button nicht nach rechts schieben */
     #resetFilters {
         margin-left: 0;
         width: 100%;
     }
 
-    /* ALLE Elemente volle Breite */
+    /* alle Filterelemente volle Breite */
     .filter-group > *,
     .year-fields > *,
     .top > * {
         width: 100%;
     }
-
-    /* Dropdown Container */
-    .dropdown-filter {
-        width: 100%;
+    .filter-group {
+        flex-direction: column;
+        align-items: stretch;
     }
 
-    /* Buttons innerhalb Dropdowns */
-    .dropdown-filter button,
-    .filter-btn,
-    #infoButton,
-    #resetFilters,
-    .filter-group select {
+        /* alle Filter-Buttons gleich breit */
+    #infoButton,#bereichFilter, #resetFilters, .dropdown-filter button {
         width: 100%;
         display: block;
         text-align: center;
     }
 
-}
+    /* wichtig für deine Button-Klasse */
+    .filter-btn {
+        width: 100%;
+        display: block;
+         /* optional */
+    }
+    .top {
+        flex-direction: column;
+        align-items: flex-start; /* linksbündig */
+        justify-content: flex-start;
+    }
+
+    .result-box {
+        width: 100%;
+        text-align: left;
+    }
+    .radio-container {
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 12px;
+        margin-bottom: 12px;
+    }
 
 }
