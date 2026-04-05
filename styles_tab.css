@@ -48,7 +48,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #FA8072;
+    color: #CC5500;
 }
 .text-container {
     max-width: 80%; /* Textbreite */
@@ -817,5 +817,12 @@ table.dataTable thead .sorting_desc:after {
  .table-container {
     width: 100%;
  }
+    .filter-group button,
+    .filter-group select,
+    .dropdown-filter button {
+        text-align: center;   /* Text zentriert */
+        padding-left: 0;
+        padding-right: 0;
+    }
 
 }
