@@ -711,17 +711,6 @@
                 }, 50);
             });
 
-            //$('#demo thead tr:eq(1) th').each(function (i) {
-                //let title = $(this).text();
-                //$(this).html('<input type="text" placeholder="' + title + '" style="width:100%"/>');
-
-                //$('input', this).on('keyup change', function () {
-                    //if (table.column(i).search() !== this.value) {
-                        //table.column(i).search(this.value).draw();
-                    //}
-                //});
-            //});
-
             $('#demo tbody').on('click', '.tooltip-name', function (e) {
                 e.stopPropagation();
 
@@ -737,3 +726,22 @@
                 $('.tooltip-name').removeClass('active');
             });
         });
+
+
+     const $button = $('#infoButton');
+     const $popup = $('#infoPopup');
+
+     $button.on('click', function (e) {
+         e.stopPropagation();
+         $popup.toggle();
+     });
+
+     $(document).on('click', function () {
+         $popup.hide();
+     });
+
+     $popup.on('click', function (e) {
+         e.stopPropagation();
+     });
+
+
