@@ -48,7 +48,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #98FB98;
+    color: #E3735E;
 }
 .text-container {
     max-width: 80%; /* Textbreite */
@@ -770,6 +770,11 @@ table.dataTable thead .sorting_desc:after {
         align-items: stretch;
         gap: 10px;
     }
+     .year-fields label {
+     display: flex;
+     flex-direction: row;
+     text-align: center;
+ }
         #resetFilters {
         margin-left: 0;
         display: block;
