@@ -48,7 +48,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #0FFF50;
+    color: #808000;
 }
 .text-container {
     max-width: 80%; /* Textbreite */
@@ -759,12 +759,9 @@ table.dataTable thead .sorting_desc:after {
         grid-column: 1;
         flex-direction: column;
         align-items: stretch;
+        gap: 20px;
     }
-    .filter-group .dropdown-filter button {
-    height: 48px; /* oder automatisch über flex-grow */
-    flex-grow: 1;
-}
-
+    
     /* rechte Spalte */
     .year-fields {
         grid-column: 2;
