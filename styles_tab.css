@@ -48,7 +48,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #5D3FD3;
+    color: #E6E6FA;
 }
 .text-container {
     max-width: 80%; /* Textbreite */
@@ -841,6 +841,11 @@ table.dataTable thead .sorting_desc:after {
         .filter-group select::-ms-expand {
             display: none; /* falls IE/Edge */
         }
+    #infoPopup {
+    min-width: 0;
+    max-width: 95vw;
+
+}
 
 
 }
