@@ -48,7 +48,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #7DF9FF;
+    color: #228B22;
 }
 .text-container {
     max-width: 80%; /* Textbreite */
@@ -806,5 +806,16 @@ table.dataTable thead .sorting_desc:after {
         padding-bottom: 12px;
         margin-bottom: 12px;
     }
+     .filter-group {
+     gap: 14px; /* z.B. statt 10px */
+ }
+ .radio-container label {
+     line-height: 1.4;
+     display: block;
+     margin-bottom: 6px;
+ }
+ .table-container {
+     max-width: 98%;
+ }
 
 }
