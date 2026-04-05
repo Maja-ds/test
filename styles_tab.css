@@ -48,7 +48,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #097969;
+    color: #7DF9FF;
 }
 .text-container {
     max-width: 80%; /* Textbreite */
@@ -784,6 +784,7 @@ table.dataTable thead .sorting_desc:after {
     /* Reset Button */
     #resetFilters {
         margin-left: 0;
+        display: block;
     }
 
     /* Result Box links + eine Zeile */
