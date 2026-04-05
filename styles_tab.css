@@ -48,7 +48,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #953553;
+    color: #CCCCFF;
 }
 .text-container {
     max-width: 80%; /* Textbreite */
@@ -733,23 +733,26 @@ table.dataTable thead .sorting_desc:after {
         align-items: start;
     }
 
-    /* oben volle Breite */
     .top,
     .filter-line,
     .active-filters {
         grid-column: 1 / -1;
     }
 
-    /* links */
+    /* linke Spalte */
     .filter-group {
         grid-column: 1;
         flex-direction: column;
         align-items: stretch;
     }
 
-    /* rechts */
+    /* rechte Spalte */
     .year-fields {
         grid-column: 2;
+
+        flex-direction: column;   /* <-- DAS fehlt */
+        align-items: stretch;
+        gap: 10px;
     }
 
 }
