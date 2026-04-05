@@ -48,7 +48,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #F54927;
+    color: #F5B027;
 }
 .text-container {
     max-width: 80%; /* Textbreite */
@@ -802,8 +802,11 @@ table.dataTable thead .sorting_desc:after {
 
     .result-box {
         width: 100%;
-        text-align: left;
         margin-left: 0;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* DAS ist entscheidend */
     }
     .radio-container {
         border-bottom: 1px solid #ddd;
