@@ -48,7 +48,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: yellow;
+    color: green;
 }
 .text-container {
     max-width: 80%; /* Textbreite */
@@ -764,17 +764,35 @@ table.dataTable thead .sorting_desc:after {
         gap: 10px;
     }
 
-    /* Reset Button nicht nach rechts schieben */
+    /* Reset Button */
     #resetFilters {
         margin-left: 0;
         width: 100%;
     }
 
-    /* alle Filterelemente volle Breite */
+    /* ALLE Elemente volle Breite */
     .filter-group > *,
     .year-fields > *,
     .top > * {
         width: 100%;
     }
+
+    /* Dropdown Container */
+    .dropdown-filter {
+        width: 100%;
+    }
+
+    /* Buttons innerhalb Dropdowns */
+    .dropdown-filter button,
+    .filter-btn,
+    #infoButton,
+    #resetFilters,
+    .filter-group select {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+}
 
 }
