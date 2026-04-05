@@ -48,7 +48,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #097969;
+    color: #E97451;
 }
 .text-container {
     max-width: 80%; /* Textbreite */
@@ -728,7 +728,11 @@ table.dataTable thead .sorting_desc:after {
 
     #filter-panel {
         width: 50%;
+        margin-left: 0;
+        margin-right: auto;  /* linksbündig */
     }
+
+}
 
     .top,
     .filter-group,
