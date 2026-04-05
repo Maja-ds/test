@@ -48,7 +48,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #630330;
+    color: #BF40BF;
 }
 .text-container {
     max-width: 80%; /* Textbreite */
@@ -845,6 +845,24 @@ table.dataTable thead .sorting_desc:after {
     min-width: 0;
     max-width: 95vw;
 }
+    
+        .tooltip-name .info-text {
+        left: 0;                 /* nicht mehr rechts rauslaufen */
+        transform: translateY(-100%);
+        
+        width: 90vw;             /* fast Bildschirmbreite */
+        max-width: 90vw;         /* harte Begrenzung */
+        min-width: 0;
+
+        max-height: 40vh;        /* begrenzte Höhe */
+        overflow-y: auto;
+
+        white-space: normal;     
+        word-break: break-word;
+        overflow-wrap: break-word;
+
+        padding: 10px 14px;      /* etwas kompakter */
+    }
 
 
 }
