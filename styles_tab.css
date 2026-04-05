@@ -48,7 +48,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #FAA0A0;
+    color: green;
 }
 .text-container {
     max-width: 80%; /* Textbreite */
@@ -840,7 +840,7 @@ table.dataTable thead .sorting_desc:after {
 
 
 /* --- Responsive für Mobilgeräte --- */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
     .top,
     .filter-group,
