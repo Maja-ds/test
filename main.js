@@ -466,6 +466,8 @@
 
                         const filters = parseYearInput(inputVal);
 
+                        if (filters.length === 0) return;
+
                         if (isNaN(rowValue)) { yearPass = false; return false; }
 
                         // OR für "=" Filter
