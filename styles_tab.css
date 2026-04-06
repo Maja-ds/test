@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: red;
+    color: #AAFF00;
 }
 
 .text-container {
@@ -806,7 +806,6 @@ table.dataTable thead .sorting_desc:after {
     .dropdown-filter button,
     .filter-btn {
         width: 100%;
-        text-align: center;
     }
 
 
