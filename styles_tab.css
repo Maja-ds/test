@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: blue;
+    color: red;
 }
 
 .text-container {
@@ -517,6 +517,7 @@ input[type="radio"] {
 
 .year-fields {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     align-items: flex-end;
 }
