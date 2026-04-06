@@ -499,12 +499,7 @@ input[type="radio"] {
     cursor: pointer;
     transition: all 0.2s ease;
 }
-    #bereichFilter {
-    line-height: normal;
-}
-#bereichFilter {
-    height: auto;
-}
+
 
     /* Hover Effekt */
     #bereichFilter:hover {
