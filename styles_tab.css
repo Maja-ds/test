@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #FFB6C1;
+    color: #088F8F;
 }
 
 .text-container {
@@ -532,9 +532,6 @@ input[type="radio"] {
     gap: 15px 15px;
     align-items: flex-end;
 }
-#resetFilters {
-    margin-left: auto;
-}
 
 .yearFilter {
     width: 200px;
@@ -811,11 +808,6 @@ table.dataTable thead .sorting_desc:after {
         text-align: center;
     }
 
-    /* Reset Button */
-    #resetFilters {
-        margin-left: 0;
-        display: block;
-    }
 
     /* Result Box links + eine Zeile */
     .result-box {
