@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: red;
+    color: blue;
 }
 
 .text-container {
@@ -799,7 +799,7 @@ table.dataTable thead .sorting_desc:after {
     #infoButton,
     #bereichFilter,
     #resetFilters,
-    .yearFilter
+    .yearFilter,
     .dropdown-filter button,
     .filter-btn {
         width: 100%;
