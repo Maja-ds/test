@@ -48,7 +48,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #DC143C;
+    color: #FF00FF;
 }
 .text-container {
     max-width: 80%; /* Textbreite */
@@ -313,6 +313,7 @@ div.dataTables_length select {
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .radio-group {
@@ -379,6 +380,7 @@ input[type="radio"] {
 .filter-group {
     display: flex;
     flex-direction: row; /* Elemente nebeneinander */
+    flex-wrap: wrap;
     align-items: center;
     gap: 15px; /* Abstand zwischen Elementen */
     margin-bottom: 15px;
@@ -508,6 +510,7 @@ input[type="radio"] {
 /* Panelelemente vierte Zeile */
 .year-fields {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: flex-end;
     gap: 15px;
@@ -726,13 +729,6 @@ table.dataTable thead .sorting_desc:after {
 
 @media (min-width: 768px) and (max-width: 1024px) {
 
-        .top,
-    .filter-group,
-    .year-fields {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-    }
     #resetFilters {
     margin-left: 0;
 }
