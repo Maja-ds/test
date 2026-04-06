@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #DFFF00;
+    color: red;
 }
 
 .text-container {
@@ -496,7 +496,7 @@ input[type="radio"] {
     background: #f4f6f8;
     border: 1px solid #dcdfe3;
     border-radius: 4px;
-    padding: 5px 14px;
+    padding: 6px 14px;
     font-size: 15px;
     font-family: Arial;
     color: #333;
