@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #FF00FF;
+    color: green;
 }
 
 .text-container {
@@ -754,13 +754,24 @@ table.dataTable thead .sorting_desc:after {
         width: 200px;
     }
 
-    
-    .filter-group button,
+        .filter-group button,
     .filter-group select,
     .dropdown-filter button {
-       text-align: center; /* Text zentriert */
-       padding: 6px o;
+        text-align: center; /* Text zentriert */
+        padding-left: 0;
+        padding-right: 0;
     }
+
+    /* Optional: bei select im Firefox */
+    .filter-group select {
+        -moz-appearance: none;
+        text-align-last: center; /* zentriert den ausgewählten Text */
+    }
+
+        /* Optional: bei Chrome/Safari */
+        .filter-group select::-ms-expand {
+            display: none; /* falls IE/Edge */
+        }
     
 }
 /* --- Responsive für Mobilgeräte --- */
