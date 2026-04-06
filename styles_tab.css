@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: green;
+    color: #FF00FF;
 }
 
 .text-container {
@@ -499,6 +499,12 @@ input[type="radio"] {
     cursor: pointer;
     transition: all 0.2s ease;
 }
+    #bereichFilter {
+    line-height: normal;
+}
+#bereichFilter {
+    height: auto;
+}
 
     /* Hover Effekt */
     #bereichFilter:hover {
@@ -747,9 +753,7 @@ table.dataTable thead .sorting_desc:after {
     #bereichFilter {
         width: 200px;
     }
-    #bereichFilter {
-    line-height: normal;
-}
+
     
     .filter-group button,
     .filter-group select,
