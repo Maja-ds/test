@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #FF00FF;
+    color: #FFB6C1;
 }
 
 .text-container {
@@ -583,7 +583,7 @@ input[type="radio"] {
     background: #e1f1fd;
     color: black;
     border: 1px solid #ccc;
-    padding: 6px 12px;
+    padding: 6px 0;
     font-family: Arial;
     font-size: 15px;
     border-radius: 4px;
@@ -629,6 +629,7 @@ input[type="radio"] {
     align-items: center;
     transition: all 0.2s ease;
     box-sizing: border-box;
+    justify-content: center;
 }
 
     #resetFilters:hover {
