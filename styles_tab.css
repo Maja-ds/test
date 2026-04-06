@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: red;
+    color: green;
 }
 
 .text-container {
@@ -743,6 +743,10 @@ table.dataTable thead .sorting_desc:after {
         border-bottom: 1px solid #ddd;
         padding-bottom: 12px;
         margin-bottom: 12px;
+    }
+    #bereichFilter {
+        width: 200px;
+        text-align: center;
     }
     
 }
