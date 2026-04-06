@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: green;
+    color: red;
 }
 
 .text-container {
@@ -795,6 +795,7 @@ table.dataTable thead .sorting_desc:after {
         }
       .year-fields > * {
         width: 100% !important; /* zwingt volle Breite */
+        max-width: 100%;
         box-sizing: border-box; 
     }
 
