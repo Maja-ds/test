@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: red;
+    color: yellow;
 }
 
 .text-container {
@@ -536,7 +536,6 @@ input[type="radio"] {
 }
 
 .yearFilter {
-    width: 200px;
     padding: 6px 4px;
     font-size: 15px;
     border: 1px solid #D3D3D3;
@@ -793,11 +792,6 @@ table.dataTable thead .sorting_desc:after {
         .top > * {
             width: 100%;
         }
-      .year-fields > * {
-        width: 100% !important; /* zwingt volle Breite */
-        max-width: 100%;
-        box-sizing: border-box; 
-    }
 
     /* Buttons gleich breit */
     #infoButton,
