@@ -48,7 +48,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #F89880;
+    color: #E0B0FF;
 }
 .text-container {
     max-width: 80%; /* Textbreite */
@@ -396,9 +396,10 @@ input[type="radio"] {
 
 .dropdown-filter {
     position: relative;
-    display: inline-block;
+    flex: 0 0 18%;
 }
     .dropdown-filter button {
+        width: 100%;
         background: #f4f6f8;
         border: 1px solid #dcdfe3;
         border-radius: 4px;
@@ -488,6 +489,7 @@ input[type="radio"] {
     border-radius: 4px;
     padding: 5px 14px;
     font-size: 15px;
+    text-align: center;
     font-family: Arial;
     color: #333;
     cursor: pointer;
@@ -739,6 +741,11 @@ table.dataTable thead .sorting_desc:after {
    #filter-panel {
        background-color: white;
    }
+        .radio-container {
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 12px;
+        margin-bottom: 12px;
+    }
 
 }
 
@@ -797,7 +804,7 @@ table.dataTable thead .sorting_desc:after {
         margin-bottom: 12px;
     }
      .filter-group {
-     gap: 18px; /* z.B. statt 10px */
+     gap: 10px; /* z.B. statt 10px */
  }
  .radio-container label {
      line-height: 1.8;
