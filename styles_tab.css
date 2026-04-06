@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: yellow;
+    color: red;
 }
 
 .text-container {
@@ -413,6 +413,8 @@ input[type="radio"] {
         color: #333;
         cursor: pointer;
         transition: all 0.2s ease;
+        line-height: 1.5;          /* stabilisiert Höhe über Geräte */
+        height: 34px;
     }
 
         .dropdown-filter button:hover {
@@ -489,6 +491,7 @@ input[type="radio"] {
         }
 
 #bereichFilter {
+    width: 200px;
     background: #f4f6f8;
     border: 1px solid #dcdfe3;
     border-radius: 4px;
@@ -500,7 +503,7 @@ input[type="radio"] {
     transition: all 0.2s ease;
     box-sizing: border-box;
     line-height: 1.5;          /* stabilisiert Höhe über Geräte */
-    height: 36px;
+    height: 34px;
 }
 
 
@@ -755,7 +758,7 @@ table.dataTable thead .sorting_desc:after {
         width: auto;            /* Desktop-Breite übernehmen */
         padding-left: 14px;     /* Padding wieder herstellen */
         padding-right: 14px;
-        height: 36px;           /* gleiche Höhe wie Desktop */
+        height: 34px;           /* gleiche Höhe wie Desktop */
         line-height: 1.5;       /* stabil */
         text-align: center;     /* Text zentriert */
     }
