@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #F33A6A;
+    color: #AAFF00;
 }
 
 .text-container {
@@ -389,6 +389,7 @@ input[type="radio"] {
     flex-wrap: wrap;
     gap: 15px 15px;
     align-items: center;
+    margin-bottom: 25px;
 }
 
 /* Wenn Dropdown geöffnet, sichtbar machen */
