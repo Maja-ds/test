@@ -794,9 +794,6 @@ table.dataTable thead .sorting_desc:after {
         .top > * {
             width: 100%;
         }
-    .yearFilter {
-        width: none;
-    }
 
     /* Buttons gleich breit */
     #infoButton,
