@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: yellow;
+    color: #FF00FF;
 }
 
 .text-container {
@@ -536,10 +536,12 @@ input[type="radio"] {
 }
 
 .yearFilter {
+    width: 200px;
     padding: 6px 4px;
     font-size: 15px;
     border: 1px solid #D3D3D3;
     border-radius: 4px;
+    box-sizing: border-box;
 }
 
 
