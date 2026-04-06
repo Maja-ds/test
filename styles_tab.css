@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #702963;
+    color: green;
 }
 
 .text-container {
@@ -732,6 +732,18 @@ table.dataTable thead .sorting_asc:before {
 table.dataTable thead .sorting_desc:after {
     color: #6495ED;
     opacity: 1 !important;
+}
+@media (max-width: 1024px) {
+     #resetFilters {
+        margin-left: 0;
+        display: block;
+    }
+        .radio-container {
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 12px;
+        margin-bottom: 12px;
+    }
+    
 }
 /* --- Responsive für Mobilgeräte --- */
 @media (max-width: 768px) {
