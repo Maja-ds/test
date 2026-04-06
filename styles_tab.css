@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #AAFF00;
+    color: red;
 }
 
 .text-container {
@@ -403,6 +403,7 @@ input[type="radio"] {
 }
 
     .dropdown-filter button {
+        width: 200px;
         background: #f4f6f8;
         border: 1px solid #dcdfe3;
         border-radius: 4px;
