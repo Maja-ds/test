@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #088F8F;
+    color: red;
 }
 
 .text-container {
@@ -376,6 +376,7 @@ input[type="radio"] {
         margin-right: 4px;
         display: inline-block;
         font-size: 15px;
+        margin-bottom: 6px;
         font-family: Arial;
         font-style: oblique;
     }
