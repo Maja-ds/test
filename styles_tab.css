@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: green;
+    color: #AFE1AF;
 }
 
 .text-container {
@@ -746,7 +746,13 @@ table.dataTable thead .sorting_desc:after {
     }
     #bereichFilter {
         width: 200px;
-        text-align: center;
+    }
+    
+    .filter-group button,
+    .filter-group select,
+    .dropdown-filter button {
+       text-align: center; /* Text zentriert */
+       padding: 6px o;
     }
     
 }
