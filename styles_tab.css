@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #AFE1AF;
+    color: #DFFF00;
 }
 
 .text-container {
@@ -489,6 +489,10 @@ input[type="radio"] {
         }
 
 #bereichFilter {
+     appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    
     background: #f4f6f8;
     border: 1px solid #dcdfe3;
     border-radius: 4px;
