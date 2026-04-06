@@ -48,7 +48,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #E0B0FF;
+    color: #6082B6;
 }
 .text-container {
     max-width: 80%; /* Textbreite */
@@ -400,6 +400,7 @@ input[type="radio"] {
 }
     .dropdown-filter button {
         width: 100%;
+        white-space: nowrap;
         background: #f4f6f8;
         border: 1px solid #dcdfe3;
         border-radius: 4px;
