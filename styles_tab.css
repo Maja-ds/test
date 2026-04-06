@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: green;
+    color: #483248;
 }
 
 .text-container {
@@ -365,6 +365,7 @@ input[type="radio"] {
 /*Panelelemente zweite Zeile*/
 .active-filters {
     margin-top: 4px;
+    gap: 10px;
 }
 
     .active-filters span {
@@ -388,8 +389,7 @@ input[type="radio"] {
     flex-wrap: wrap;
     gap: 10px;
     align-items: center;
-    gap: 15px; /* Abstand zwischen Elementen */
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 /* Wenn Dropdown geöffnet, sichtbar machen */
@@ -522,6 +522,7 @@ input[type="radio"] {
     flex-wrap: wrap;
     gap: 10px;
     align-items: flex-end;
+    margin-bottom: 15px;
 }
 #resetFilters {
     margin-left: auto;
