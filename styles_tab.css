@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: red;
+    color: #BF40BF;
 }
 
 .text-container {
@@ -319,6 +319,7 @@ div.dataTables_length select {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 30px;
     justify-content: space-between;
 }
 
@@ -385,6 +386,7 @@ input[type="radio"] {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 10px;
     align-items: center;
     gap: 15px; /* Abstand zwischen Elementen */
     margin-bottom: 15px;
@@ -601,7 +603,6 @@ input[type="radio"] {
 }
 /* Reset Button rechts */
 #resetFilters {
-    width: 18%;
     font-family: Arial;
     font-size: 15px;
     padding: 6px 12px;
