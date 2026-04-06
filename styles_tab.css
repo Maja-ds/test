@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #BF40BF;
+    color: #702963;
 }
 
 .text-container {
@@ -319,7 +319,7 @@ div.dataTables_length select {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 15px;
     justify-content: space-between;
 }
 
