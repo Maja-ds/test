@@ -48,7 +48,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #FF00FF;
+    color: #F89880;
 }
 .text-container {
     max-width: 80%; /* Textbreite */
@@ -314,6 +314,8 @@ div.dataTables_length select {
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 15px;
 }
 
 .radio-group {
@@ -513,6 +515,7 @@ input[type="radio"] {
     flex-wrap: wrap;
     flex-direction: row;
     align-items: flex-end;
+    margin-bottom: 15px;
     gap: 15px;
 }
 
@@ -732,6 +735,9 @@ table.dataTable thead .sorting_desc:after {
     #resetFilters {
     margin-left: 0;
 }
+   #filter-panel {
+       background-color: black;
+   }
 
 }
 
