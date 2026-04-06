@@ -389,7 +389,7 @@ input[type="radio"] {
     flex-wrap: wrap;
     gap: 15px 15px;
     align-items: center;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 /* Wenn Dropdown geöffnet, sichtbar machen */
