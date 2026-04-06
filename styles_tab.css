@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #FF00FF;
+    color: red;
 }
 
 .text-container {
@@ -793,6 +793,10 @@ table.dataTable thead .sorting_desc:after {
         .top > * {
             width: 100%;
         }
+      .year-fields > * {
+        width: 100% !important; /* zwingt volle Breite */
+        max-width: 100%;        /* verhindert Beschränkung */
+    }
 
     /* Buttons gleich breit */
     #infoButton,
