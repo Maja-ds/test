@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: green;
+    color: red;
 }
 
 .text-container {
@@ -416,7 +416,7 @@ input[type="radio"] {
         box-sizing: border-box;
         transition: all 0.2s ease;
         line-height: 1.5;          /* stabilisiert Höhe über Geräte */
-        height: 30px;
+        height: 32px;
     }
 
         .dropdown-filter button:hover {
