@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: green;
+    color: #FFBF00;
 }
 
 .text-container {
@@ -415,8 +415,8 @@ input[type="radio"] {
         cursor: pointer;
         box-sizing: border-box;
         transition: all 0.2s ease;
-        line-height: 1;          /* stabilisiert Höhe über Geräte */
-        height: 30px;
+        line-height: 1.5;          /* stabilisiert Höhe über Geräte */
+        height: 32px;
     }
 
         .dropdown-filter button:hover {
@@ -785,7 +785,6 @@ table.dataTable thead .sorting_desc:after {
     .year-fields {
         flex-direction: column;
         align-items: stretch;
-        gap: 10px;
     }
 
         /* alle Elemente volle Breite */
@@ -823,10 +822,6 @@ table.dataTable thead .sorting_desc:after {
         border-bottom: 1px solid #ddd;
         padding-bottom: 12px;
         margin-bottom: 12px;
-    }
-
-    .filter-group {
-        gap: 14px; /* z.B. statt 10px */
     }
 
     .radio-container label {
