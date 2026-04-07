@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: yellow;
+    color: blue;
 }
 
 .text-container {
@@ -415,7 +415,7 @@ input[type="radio"] {
         cursor: pointer;
         box-sizing: border-box;
         transition: all 0.2s ease;
-        line-height: 1.5;          /* stabilisiert Höhe über Geräte */
+        line-height: 1;          /* stabilisiert Höhe über Geräte */
         height: 32px;
     }
 
@@ -504,8 +504,8 @@ input[type="radio"] {
     cursor: pointer;
     transition: all 0.2s ease;
     box-sizing: border-box;
-    line-height: 1.5;          /* stabilisiert Höhe über Geräte */
-    height: 34px;
+    line-height: 1;          /* stabilisiert Höhe über Geräte */
+    height: 32px;
 }
 
 
@@ -757,15 +757,13 @@ table.dataTable thead .sorting_desc:after {
         padding-bottom: 12px;
         margin-bottom: 12px;
     }
-    #bereichFilter {
-        width: 200px;
-    }
+
 #bereichFilter {
         width: 200px;            /* Desktop-Breite übernehmen */
         padding-left: 14px;     /* Padding wieder herstellen */
         padding-right: 14px;
-        height: 34px;           /* gleiche Höhe wie Desktop */
-        line-height: 1.5;       /* stabil */
+        height: 32px;           /* gleiche Höhe wie Desktop */
+        line-height: 1;       /* stabil */
         text-align: center;     /* Text zentriert */
     }
 
