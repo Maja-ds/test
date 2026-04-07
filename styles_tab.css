@@ -1,7 +1,7 @@
 /*Body*/
 body {
     background-color: white;
-    font-family: Arial;
+    font-family: Arial; 
 }
 
 nav .container-fluid {
@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: red;
+    color: yellow;
 }
 
 .text-container {
@@ -598,7 +598,7 @@ input[type="radio"] {
 #infoPopup {
     position: absolute;
     top: calc(100% + 3px);
-    right: 0;
+    left: 0;
     min-width: 300px;
     background: white;
     border: 1px solid #ccc;
