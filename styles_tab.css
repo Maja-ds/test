@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #AA336A;
+    color: #097969;
 }
 
 .text-container {
@@ -795,6 +795,9 @@ a[x-apple-data-detectors] {
         .top > * {
             width: 100%;
         }
+    .radio-container label {
+     line-height: 1.8;
+}
 
     /* Buttons gleich breit */
     #infoButton,
@@ -830,7 +833,7 @@ a[x-apple-data-detectors] {
     .radio-container {
         border-bottom: 1px solid #ddd;
         padding-bottom: 12px;
-        margin-bottom: 12px;
+        margin-bottom: 5px;
     }
 
     .radio-container label {
