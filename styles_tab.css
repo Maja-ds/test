@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: red;
+    color: #5D3FD3;
 }
 
 .text-container {
@@ -827,6 +827,7 @@ a[x-apple-data-detectors] {
     }
     .filter-group {
         margin-bottom: 0;
+        gap: 0 0;
     }
 
     /* Linie unter Radio */
@@ -846,10 +847,13 @@ a[x-apple-data-detectors] {
     }
 
    .text-container: {
-       padding: 10px;
+       padding: 0;
    }
      #resetFilters {
-         margin-top: 10px;
+         margin-top: 8px;
+     }
+     #infoButton {
+         margin-top: 8px;
      }
 
     .filter-group button,
