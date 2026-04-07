@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #00FFFF;
+    color: #228B22;
 }
 
 .text-container {
@@ -807,6 +807,9 @@ a[x-apple-data-detectors] {
     .dropdown-filter button,
     .filter-btn {
         width: 100%;
+    }
+        .top {
+        justify-content: center;   /* oder center */
     }
 
 
