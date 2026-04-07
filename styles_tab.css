@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #800020;
+    color: green;
 }
 
 .text-container {
@@ -504,7 +504,8 @@ input[type="radio"] {
     cursor: pointer;
     transition: all 0.2s ease;
     box-sizing: border-box;
-    height: 30px;
+    line-height: 1.5;
+    height: 32px;
 }
 
 
@@ -759,8 +760,9 @@ table.dataTable thead .sorting_desc:after {
 
 #bereichFilter {
         width: 200px;            /* Desktop-Breite übernehmen */
-        padding: 6px 14px;     /* Padding wieder herstellen */
-        height: 30px;           /* gleiche Höhe wie Desktop */
+        padding: 6px 14px; 
+        line-height: 1.5
+        height: 32px;           /* gleiche Höhe wie Desktop */
         text-align: center;     /* Text zentriert */
     }
 
