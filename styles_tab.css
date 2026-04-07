@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #5D3FD3;
+    color: #CBC3E3;
 }
 
 .text-container {
@@ -824,6 +824,9 @@ a[x-apple-data-detectors] {
     }
     .year-fields {
         gap: 5px 0;
+    }
+    .dropdown-filter button {
+        margin-bottom: 8px;
     }
     .filter-group {
         margin-bottom: 0;
