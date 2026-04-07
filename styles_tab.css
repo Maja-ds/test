@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: blue;
+    color: #F28C28;
 }
 
 .text-container {
@@ -818,14 +818,14 @@ a[x-apple-data-detectors] {
         flex-direction: row;
         align-items: flex-end;
         justify-content: flex-start;
-        gap: 6px;
+        gap: 0px;
     }
     .year-fields {
         gap: 5px 0;
     }
 
     .filter-group {
-        gap: 12px 0;
+        gap: 14px 0;
     }
 
     /* Linie unter Radio */
