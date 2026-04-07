@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #CC5500;
+    color: #F88379;
 }
 
 .text-container {
@@ -821,6 +821,9 @@ a[x-apple-data-detectors] {
         align-items: center;
         justify-content: flex-start;
         gap: 6px;
+    }
+    .year-fields {
+        gap 5px 0;
     }
 
     /* Linie unter Radio */
