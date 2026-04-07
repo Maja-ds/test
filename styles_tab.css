@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #FBCEB1;
+    color: #CC5500;
 }
 
 .text-container {
@@ -415,7 +415,6 @@ input[type="radio"] {
         cursor: pointer;
         box-sizing: border-box;
         transition: all 0.2s ease;
-        line-height: 1.5;          /* stabilisiert Höhe über Geräte */
         height: 32px;
     }
 
