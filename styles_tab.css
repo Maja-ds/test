@@ -50,11 +50,11 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #BF40BF;
+    color: red;
 }
 
 .text-container {
-    max-width: 90%; /* Textbreite */
+    max-width: 100%; /* Textbreite */
     margin: 0 auto; /* zentrieren */
     padding: 20px; /* Innenabstand */
 }
@@ -841,10 +841,16 @@ a[x-apple-data-detectors] {
         display: block;
         margin-bottom: 6px;
     }
-
     .table-container {
-        max-width: 100%;
+        width: 98%;
     }
+
+   .text-container: {
+       padding: 10px;
+   }
+     #resetFilters {
+         margin-top: 10px;
+     }
 
     .filter-group button,
     .filter-group select,
@@ -853,6 +859,7 @@ a[x-apple-data-detectors] {
         padding-left: 0;
         padding-right: 0;
     }
+    
 
     /* Optional: bei select im Firefox */
     .filter-group select {
