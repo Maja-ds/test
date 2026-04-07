@@ -50,11 +50,11 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #800020;
+    color: #AA336A;
 }
 
 .text-container {
-    max-width: 100%; /* Textbreite */
+    width: 90%; /* Textbreite */
     margin: 0 auto; /* zentrieren */
     padding: 20px; /* Innenabstand */
 }
@@ -843,6 +843,7 @@ a[x-apple-data-detectors] {
     }
 
    .text-container: {
+       width: 98%;
        padding: 0;
    }
      #resetFilters {
