@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: red;
+    color: yellow;
 }
 
 .text-container {
@@ -825,14 +825,14 @@ a[x-apple-data-detectors] {
     }
 
     .filter-group {
-        gap: 10px 0;
+        gap: 20px 0;
     }
 
     /* Linie unter Radio */
     .radio-container {
         border-bottom: 1px solid #ddd;
-        padding-bottom: 20px;
-        margin-bottom: 0px;
+        padding-bottom: 0px;
+        margin-bottom: 20px;
     }
 
     .radio-container label {
