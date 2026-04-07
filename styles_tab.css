@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #FFBF00;
+    color: #FBCEB1;
 }
 
 .text-container {
@@ -746,6 +746,13 @@ table.dataTable thead .sorting_asc:before {
 table.dataTable thead .sorting_desc:after {
     color: #6495ED;
     opacity: 1 !important;
+}
+a[x-apple-data-detectors] {
+  color: inherit !important;
+  text-decoration: none !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
 }
 @media (max-width: 1024px) {
      #resetFilters {
