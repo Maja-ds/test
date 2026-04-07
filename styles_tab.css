@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #F88379;
+    color: red;
 }
 
 .text-container {
@@ -823,7 +823,7 @@ a[x-apple-data-detectors] {
         gap: 6px;
     }
     .year-fields {
-        gap 5px 0;
+        gap: 0 0;
     }
 
     /* Linie unter Radio */
