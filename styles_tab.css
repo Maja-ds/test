@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #097969;
+    color: #AAFF00;
 }
 
 .text-container {
@@ -832,14 +832,14 @@ a[x-apple-data-detectors] {
     /* Linie unter Radio */
     .radio-container {
         border-bottom: 1px solid #ddd;
-        padding-bottom: 12px;
+        padding-bottom: 5px;
         margin-bottom: 5px;
     }
 
     .radio-container label {
-        line-height: 1.4;
+        line-height: 1.8;
         display: block;
-        margin-bottom: 6px;
+        margin-bottom: 5px;
     }
     .table-container {
         width: 98%;
