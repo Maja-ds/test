@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: red;
+    color: #FFD580;
 }
 
 .text-container {
@@ -840,7 +840,7 @@ a[x-apple-data-detectors] {
     }
 
     .table-container {
-        max-width: 98%;
+        max-width: 100%;
     }
 
     .filter-group button,
