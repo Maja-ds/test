@@ -41,7 +41,7 @@ li {
 
     li a.active {
         background-color: #8e9794;
-        color: red;
+        color: blue;
     }
 
     li a:hover {
@@ -804,6 +804,10 @@ a[x-apple-data-detectors] {
     .year-fields {
         gap: 5px;
         margin-bottom: 0;
+    }
+    .filter-group {
+        margin-bottom: 0;
+        gap: 0;
     }
 
         /* alle Elemente volle Breite */
