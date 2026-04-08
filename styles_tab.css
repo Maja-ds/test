@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: red;
+    color: blue;
 }
 
 .text-container {
@@ -925,7 +925,8 @@ a[x-apple-data-detectors] {
     .filter-box {
         width: auto;
         min-width: 80vw;
-        overflow-y: auto;
+        overflow-y: scroll;
+        scrollbar-gutter: stable;
         padding: 8px 10px;              /* kleiner */
         max-height: 55vh;
 
