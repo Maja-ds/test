@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: blue;
+    color: yellow;
 }
 
 .text-container {
@@ -932,6 +932,21 @@ a[x-apple-data-detectors] {
 
         box-sizing: border-box;
     }
+    .filter-box {
+    position: relative;
+    overflow-y: auto;
+}
+
+.filter-box::after {
+    content: "";
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 16px;
+    background: linear-gradient(to bottom, transparent, white);
+    pointer-events: none;
+}
 
     .filter-box label {
         white-space: normal;
