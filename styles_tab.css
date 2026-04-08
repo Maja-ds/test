@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: red;
+    color: yellow;
 }
 
 .text-container {
@@ -921,5 +921,32 @@ a[x-apple-data-detectors] {
         .filter-group select::-ms-expand {
             display: none; /* falls IE/Edge */
         }
+     .filter-box {
+        width: 92vw;          /* fast volle Breite */
+        max-width: 92vw;
+        min-width: unset;
+
+        padding: 14px 16px;
+        max-height: 50vh;
+
+        box-sizing: border-box;
+    }
+
+    .filter-box label {
+        white-space: normal;   /* wichtig! erlaubt Umbruch */
+        font-size: 16px !important;
+        padding: 8px 0 !important;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .filter-box input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+        flex-shrink: 0;
+    }
+
+}
 
 }
