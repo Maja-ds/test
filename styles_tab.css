@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: yellow;
+    color: #C21E56;
 }
 
 .text-container {
@@ -832,12 +832,12 @@ a[x-apple-data-detectors] {
         width: 100%;
     }
     .filter-btn,
-    .dropdown-filter button,
+    .dropdown-filter,
     .filter-group {
         margin-top: 0;
         gap: 0 0;
     }
-    .dropdown-filter {
+    .dropdown-filter button {
         margin-top: 12px;
     }
   
