@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: blue;
+    color: yellow;
 }
 
 .text-container {
@@ -791,74 +791,43 @@ a[x-apple-data-detectors] {
 /* --- Responsive für Mobilgeräte --- */
 @media (max-width: 768px) {
 
+    /* === Container Vertikal Ausrichten === */
     .top,
     .filter-group,
     .year-fields {
+        display: flex;
         flex-direction: column;
         align-items: stretch;
-    }
-        .top {
-        gap: 8px; /* leichter Abstand zwischen Radio und Result */
-    }
-    .filter-group,
-    
-    .year-fields {
-        gap: 5px;
-        margin-bottom: 0;
+        gap: 5px;            /* kleiner interner Abstand */
+        margin-bottom: 0;     /* kein extra Abstand */
     }
 
-        /* alle Elemente volle Breite */
-        .filter-group > *,
-        .year-fields > *,
-        .top > * {
-            width: 100%;
-        }
-    
-    .radio-container label {
-     line-height: 1.8;
-}
-
-    /* Buttons gleich breit */
-    #infoButton,
-    #bereichFilter,
-    #resetFilters,
-    .yearFilter,
-    .dropdown-filter button,
-    .filter-btn {
-        width: 100%;
-    }
-  
-    /* Result Box links + eine Zeile */
-
-    .year-fields {
-        margin-top: 6px; /* hier gezielt kleiner Abstand */
+    /* Top-Bereich (Radio + Result) */
+    .top {
+        gap: 8px;             /* leichter Abstand zwischen Radio & Result */
     }
 
-    /* Optional: Labels in Year-Fields kompakter */
-    .year-fields label span {
-        margin-bottom: 1px; /* minimaler Abstand zwischen Label und Input */
-    }
-
-    /* Linie unter Radio */
+    /* Radio-Container */
     .radio-container {
         border-bottom: 1px solid #ddd;
-        padding-bottom: 4px; 
-        margin-bottom: 4px; 
+        padding-bottom: 4px;
+        margin-bottom: 4px;
     }
 
     .radio-container label {
-        line-height: 1.8;
         display: block;
         margin-bottom: 3px;
+        line-height: 1.6;
     }
 
+    /* Result-Box */
     .result-box {
         width: 100%;
         margin: 0;
-        padding: 0 0;       /* kleiner Innenabstand */
+        padding: 4px 6px;        /* kleiner Innenabstand */
         display: flex;
         flex-direction: row;
-        align-items: flex-end;    /* vertikal zentriert zur Linie */
+        align-items: center;      /* vertikal zentriert */
         justify-content: flex-start;
         gap: 6px;
         border-radius: 4px;
@@ -867,42 +836,77 @@ a[x-apple-data-detectors] {
         font-family: Arial;
         font-weight: 500;
     }
-    
-    .table-container {
-        width: 98%;
+
+    /* === Filter-Gruppe === */
+    .filter-group {
+        gap: 5px;             /* kleiner Abstand zwischen Elementen */
     }
 
-   .text-container: {
-       width: 98%;
-       padding: 0;
-   }
-     #resetFilters {
-         margin-top: 8px;
-     }
-     #infoButton {
-         margin-top: 8px;
-     }
-
-    .filter-group button,
-    .filter-group select,
-    .dropdown-filter button {
-        text-align: center; /* Text zentriert */
-        padding-left: 0;
-        padding-right: 0;
+    .filter-group > * {
+        width: 100%;
+        margin-bottom: 0;      /* kein extra Abstand */
+        box-sizing: border-box;
     }
-    
 
-    /* Optional: bei select im Firefox */
+    /* Buttons & Dropdowns */
+    #infoButton,
+    #bereichFilter,
+    #resetFilters,
+    .yearFilter,
+    .dropdown-filter button,
+    .filter-btn {
+        width: 100%;
+        margin-bottom: 0;      /* kompakt */
+        box-sizing: border-box;
+    }
+
+    /* Select Styling */
     .filter-group select {
         -moz-appearance: none;
-        text-align-last: center; /* zentriert den ausgewählten Text */
+        text-align-last: center;
     }
 
-        /* Optional: bei Chrome/Safari */
-        .filter-group select::-ms-expand {
-            display: none; /* falls IE/Edge */
-        }
+    .filter-group select::-ms-expand {
+        display: none;         /* IE/Edge */
+    }
 
+    /* === Year-Fields === */
+    .year-fields {
+        margin-top: 4px;       /* Abstand zwischen Filter-Group und Year-Fields */
+        align-items: flex-start; /* Inputs oben ausrichten */
+        gap: 4px;              /* kleiner Abstand zwischen Year-Inputs */
+    }
+
+    .year-fields label {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    .year-fields label span {
+        margin-bottom: 1px;
+        font-size: 15px;
+        color: black;
+    }
+
+    /* Info-Button & Reset */
+    #infoButton,
+    #resetFilters {
+        margin-top: 4px;       /* kleiner Abstand zu Year-Fields */
+    }
+
+    /* Dropdown-Filter eigene Boxes */
+    .dropdown-filter:not(select) {
+        position: relative;     /* nur für eigene Dropdowns */
+    }
+
+    /* Container Breite anpassen */
+    .table-container,
+    .text-container {
+        width: 98%;
+        padding: 0;
+    }
 }
 
 
