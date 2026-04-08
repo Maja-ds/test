@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #ADD8E6;
+    color: #00A36C;
 }
 
 .text-container {
@@ -789,6 +789,9 @@ a[x-apple-data-detectors] {
         flex-direction: column;
         align-items: stretch;
     }
+        .top {
+        gap: 8px; /* leichter Abstand zwischen Radio und Result */
+    }
 
         /* alle Elemente volle Breite */
         .filter-group > *,
@@ -796,6 +799,7 @@ a[x-apple-data-detectors] {
         .top > * {
             width: 100%;
         }
+    
     .radio-container label {
      line-height: 1.8;
 }
@@ -823,7 +827,7 @@ a[x-apple-data-detectors] {
     /* Linie unter Radio */
     .radio-container {
         border-bottom: 1px solid #ddd;
-        padding-bottom: 4px;   /* minimaler Abstand zur Linie */
+        padding-bottom: 0px; 
         margin-bottom: 4px; 
     }
 
@@ -839,7 +843,7 @@ a[x-apple-data-detectors] {
         padding: 2px 0px;       /* kleiner Innenabstand */
         display: flex;
         flex-direction: row;
-        align-items: flex-start;    /* vertikal zentriert zur Linie */
+        align-items: flex-end;    /* vertikal zentriert zur Linie */
         justify-content: flex-start;
         gap: 6px;
         border-radius: 4px;
@@ -883,11 +887,6 @@ a[x-apple-data-detectors] {
         .filter-group select::-ms-expand {
             display: none; /* falls IE/Edge */
         }
-     .top {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 8px; /* leichter Abstand zwischen Radio und Result */
-    }
 
 }
 
