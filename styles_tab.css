@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: green;
+    color: yellow;
 }
 
 .text-container {
@@ -833,10 +833,12 @@ a[x-apple-data-detectors] {
     }
     .filter-btn,
     .dropdown-filter button,
-    .dropdown-filter,
     .filter-group {
         margin-top: 0;
         gap: 0 0;
+    }
+    .dropdown-filter {
+        margin-top: 12px;
     }
   
     /* Result Box links + eine Zeile */
