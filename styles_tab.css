@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: red;
+    color: #770737;
 }
 
 .text-container {
@@ -875,10 +875,10 @@ a[x-apple-data-detectors] {
     }
 
      #resetFilters {
-         margin-top: 8px;
+         margin-top: 6px;
      }
      #infoButton {
-         margin-top: 8px;
+         margin-top: 0;
      }
 
     .filter-group button,
