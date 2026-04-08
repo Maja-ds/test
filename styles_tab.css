@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #FF00FF;
+    color: red;
 }
 
 .text-container {
@@ -830,8 +830,8 @@ a[x-apple-data-detectors] {
   
     /* Result Box links + eine Zeile */
 
-    .year-fields {
-        margin-top: 6px; /* hier gezielt kleiner Abstand */
+    .yearFilter {
+        margin-bottom: 6px;
     }
 
     /* Optional: Labels in Year-Fields kompakter */
@@ -868,14 +868,12 @@ a[x-apple-data-detectors] {
         font-weight: 500;
     }
     
-    .table-container {
+    .table-container,
+    .text-container {
         width: 98%;
+        padding: 0;
     }
 
-   .text-container: {
-       width: 98%;
-       padding: 0;
-   }
      #resetFilters {
          margin-top: 8px;
      }
