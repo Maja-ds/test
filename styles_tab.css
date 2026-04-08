@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #F28C28;
+    color: red;
 }
 
 .text-container {
@@ -501,6 +501,7 @@ input[type="radio"] {
     box-sizing: border-box;
     line-height: 1.5;
     height: 32px;
+    margin-bottom: 5px;
 }
 
 
@@ -517,6 +518,7 @@ input[type="radio"] {
 
     #bereichFilter option {
         background: white;
+        margin-top: 5px;
     }
 
 
