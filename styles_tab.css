@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: blue;
+    color: red;
 }
 
 .text-container {
@@ -905,8 +905,9 @@ a[x-apple-data-detectors] {
     }
     #infoPopup {
         min-width: unset;
-        width: 95vw;
-        max-width: calc(100vw - 20px); /* sicher innerhalb viewport */
+        width: auto;
+        max-width: 95vw;   /* begrenzt Breite */
+        right: 0;          /* verhindert Überlaufen nach rechts */
     }
     
 
