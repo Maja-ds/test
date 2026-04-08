@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: green;
+    color: red;
 }
 
 .text-container {
@@ -902,6 +902,11 @@ a[x-apple-data-detectors] {
         text-align: center; /* Text zentriert */
         padding-left: 0;
         padding-right: 0;
+    }
+        #infoPopup {
+        min-width: unset;
+        width: 95vw;      /* 90% der Bildschirmbreite */
+        max-width: 95vw;
     }
     
 
