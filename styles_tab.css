@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #F3CFC6;
+    color: #F33A6A;
 }
 
 .text-container {
@@ -801,9 +801,8 @@ a[x-apple-data-detectors] {
         gap: 8px; /* leichter Abstand zwischen Radio und Result */
     }
     .filter-group,
-    
     .year-fields {
-        gap: 5px;
+        gap: 0;
         margin-bottom: 0;
     }
 
