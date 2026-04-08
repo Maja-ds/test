@@ -41,7 +41,7 @@ li {
 
     li a.active {
         background-color: #8e9794;
-        color: blue;
+        color: white;
     }
 
     li a:hover {
@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: yellow;
+    color: red;
 }
 
 .text-container {
@@ -829,6 +829,9 @@ a[x-apple-data-detectors] {
     .dropdown-filter button,
     .filter-btn {
         width: 100%;
+    }
+    .dropdown-filter button {
+        margin-top: 10px;
     }
   
     /* Result Box links + eine Zeile */
