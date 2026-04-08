@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #FF10F0;
+    color: blue;
 }
 
 .text-container {
@@ -398,7 +398,7 @@ input[type="radio"] {
     display: block;
 }
 
-.dropdown-filter {
+.dropdown-filter:not(select) {
     position: relative;
     display: inline-block;
 }
@@ -760,6 +760,9 @@ a[x-apple-data-detectors] {
         padding-bottom: 12px;
         margin-bottom: 12px;
     }
+        .dropdown-filter:not(select) {
+        position: relative;
+    }
 
 #bereichFilter {
         width: 200px;            /* Desktop-Breite übernehmen */
@@ -767,6 +770,11 @@ a[x-apple-data-detectors] {
         line-height: 1.5
         height: 32px;           /* gleiche Höhe wie Desktop */
         text-align: center;     /* Text zentriert */
+    }
+
+        #bereichFilter {
+        position: static;   /* wichtig */
+        z-index: 10;        /* sicherstellen, dass Dropdown sichtbar ist */
     }
 
     /* Optional für Firefox auf Tablet */
