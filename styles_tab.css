@@ -850,14 +850,16 @@ a[x-apple-data-detectors] {
 
     /* Buttons & Dropdowns */
     #infoButton,
-    #bereichFilter,
     #resetFilters,
     .yearFilter,
+    #bereichFilter,
     .dropdown-filter button,
     .filter-btn {
         width: 100%;
-        margin-bottom: 0;      /* kompakt */
+        padding: 6px 12px;      /* gleiche Höhe links/rechts */
+        height: 36px;            /* gleiche Höhe */
         box-sizing: border-box;
+        margin-bottom: 0;
     }
 
     /* Select Styling */
