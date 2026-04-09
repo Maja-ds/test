@@ -766,7 +766,7 @@ a[x-apple-data-detectors] {
 #bereichFilter {
         width: 200px;            /* Desktop-Breite übernehmen */
         padding: 6px 14px; 
-        line-height: 1.5
+        line-height: 1.5;
         height: 32px;           /* gleiche Höhe wie Desktop */
         text-align: center;     /* Text zentriert */
     }
