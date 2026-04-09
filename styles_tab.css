@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: yellow;
+    color: #228B22;
 }
 
 .text-container {
@@ -787,7 +787,7 @@ a[x-apple-data-detectors] {
         display: none; 
     }
         .filter-box {
-        width: auto;
+        width: max-content;
         min-width: 30vw;
         overflow-y: scroll;
         scrollbar-gutter: stable;
@@ -955,13 +955,12 @@ a[x-apple-data-detectors] {
         }
 
     .filter-box {
-        width: auto;
+        width: max-content;
         min-width: 80vw;
         overflow-y: scroll;
         scrollbar-gutter: stable;
         padding: 8px 10px;              /* kleiner */
         max-height: 55vh;
-
         box-sizing: border-box;
     }
 
