@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: 	#EC5800;
+    color: #AAFF00;
 }
 
 .text-container {
@@ -786,6 +786,14 @@ a[x-apple-data-detectors] {
     .filter-group select::-ms-expand {
         display: none; 
     }
+            .tooltip-name .info-text {
+        max-width: 50vw; /* max. 90% der Bildschirmbreite */
+        left: 5vw;       /* zentriert mit Rand links */
+    }
+    mark {
+        font-size: 15px;
+        font-weight: 600;
+    }
 }
 /* --- Responsive für Mobilgeräte --- */
 @media (max-width: 768px) {
@@ -951,12 +959,11 @@ a[x-apple-data-detectors] {
     position: relative;
 }
         .tooltip-name .info-text {
-        max-width: 80vw; /* max. 90% der Bildschirmbreite */
-        width: 80vw;     /* popup nimmt fast die gesamte Breite ein */
-        left: 5vw;       /* zentriert mit Rand links */
+        max-width: 75vw; /* max. 90% der Bildschirmbreite */
+        left: 2vw;       /* zentriert mit Rand links */
     }
     mark {
         font-size: 15px;
-        font-weight: 500;
+        font-weight: 600;
     }
 }
