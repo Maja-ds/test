@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #FF00FF;
+    color: #DC143C;
 }
 
 .text-container {
@@ -970,7 +970,6 @@ a[x-apple-data-detectors] {
         padding: 3px 0 !important;      /* enger */
         display: flex;
         align-items: center;
-        gap: 6px;  
         line-height: 1.8;
     }
 
