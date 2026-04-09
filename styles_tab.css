@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: 	#FFAC1C;
+    color: 	#EC5800;
 }
 
 .text-container {
@@ -951,11 +951,12 @@ a[x-apple-data-detectors] {
     position: relative;
 }
         .tooltip-name .info-text {
-        max-width: 90vw; /* max. 90% der Bildschirmbreite */
-        width: 90vw;     /* popup nimmt fast die gesamte Breite ein */
+        max-width: 80vw; /* max. 90% der Bildschirmbreite */
+        width: 80vw;     /* popup nimmt fast die gesamte Breite ein */
         left: 5vw;       /* zentriert mit Rand links */
     }
     mark {
         font-size: 15px;
+        font-weight: 500;
     }
 }
