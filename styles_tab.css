@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #DC143C;
+    color: #F3CFC6;
 }
 
 .text-container {
@@ -970,7 +970,6 @@ a[x-apple-data-detectors] {
         padding: 3px 0 !important;      /* enger */
         display: flex;
         align-items: center;
-        line-height: 1.8;
     }
 
     .filter-box input[type="checkbox"] {
