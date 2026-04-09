@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: 	#008080;
+    color: 	#40826D;
 }
 
 .text-container {
@@ -955,9 +955,9 @@ a[x-apple-data-detectors] {
         position: absolute;
         left: 0;
         right: 0;
-        top: 100%;
+        bottom: 100%;
 
-        width: calc(100vw - 20px);
+        width: calc(100vw - 30px);
         max-width: none;
 
         max-height: 70dvh;
