@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: 	red;
+    color: 	#40E0D0;
 }
 
 .text-container {
@@ -952,21 +952,26 @@ a[x-apple-data-detectors] {
     position: relative;
 }
 .tooltip-name .info-text {
-    position: fixed;        /* fest am Viewport */
-    left: 10px;             /* Abstand links */
-    right: 10px;            /* Abstand rechts */
-    top: 10px;              /* Abstand oben */
-    bottom: 10px;           /* Abstand unten */
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 100%;           /* über dem Namen */
+    margin-bottom: 5px;
 
-    width: auto;
-    max-width: none;
+    width: calc(100vw - 20px); /* fast volle Breite auf Mobil */
+    max-width: 600px;          /* Desktop-Begrenzung */
 
+    /* Höhe dynamisch: max 70% der Viewport-Höhe oder Containerhöhe */
+    max-height: 70dvh;         
     overflow-y: auto;
-    padding: 10px 20px;
+
     background: white;
+    padding: 10px 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     z-index: 9999;
+
+    transform: none;
 }
 }
