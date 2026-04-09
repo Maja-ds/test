@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: blue;
+    color: red;
 }
 
 .text-container {
@@ -820,8 +820,33 @@ a[x-apple-data-detectors] {
         font-weight: 600;
     }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+            .filter-box {
+        width: max-content;
+        min-width: 30vw;
+        overflow-y: scroll;
+        scrollbar-gutter: stable;
+        padding: 8px 10px;              /* kleiner */
+        max-height: 55vh;
+
+        box-sizing: border-box;
+    }
+
+
+    .filter-box label {
+        white-space: normal;
+        padding: 3px 0 !important;      /* enger */
+        display: flex;
+        align-items: center;
+        color: red;
+        gap: 6px; 
+        line-height: 1.2;
+    }
+
+}
 /* --- Responsive für Mobilgeräte --- */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
     .top,
     .filter-group,
