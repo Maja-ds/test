@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: blue;
+    color: green;
 }
 
 .text-container {
@@ -264,26 +264,25 @@ div.dataTables_length select {
 
     .tooltip-name .info-text {
         position: absolute;
-        top: -5px;
-        left: 100%;
-        transform: translateY(-100%);
-        display: none;
-        white-space: normal; /* Zeilen umbrechen */
-        word-wrap: break-word;
+        left: 0;
+        top: 0; /* startet auf dem Namen */
         max-width: 600px;
         width: max-content;
         overflow-wrap: break-word;
-        font-family: Arial;
-        max-height: 100px;
+        word-wrap: break-word;
         overflow-y: auto;
         background: white;
-        color: #454545;
         padding: 10px 20px;
         border: 1px solid #ccc;
         border-radius: 4px;
         box-shadow: 0 4px 10px rgba(0,0,0,0.15);
         z-index: 9999;
+        font-family: Arial;
+        background: white;
+        color: black;
+        z-index: 9999;
         line-height: 1.5;
+        display: none; /* bleibt versteckt bis click/hover */
     }
 
     .tooltip-name.active .info-text {
