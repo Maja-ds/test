@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: 	#40826D;
+    color: 	blue;
 }
 
 .text-container {
@@ -953,9 +953,10 @@ a[x-apple-data-detectors] {
 }
     .tooltip-name .info-text {
         position: absolute;
+
         left: 0;
         right: 0;
-        bottom: 100%;
+        bottom: 100%;   /* statt top:100% */
 
         width: calc(100vw - 30px);
         max-width: none;
@@ -963,7 +964,7 @@ a[x-apple-data-detectors] {
         max-height: 70dvh;
         overflow-y: auto;
 
-        margin: 5px 0 0 0;
+        margin: 0 0 5px 0;  /* Abstand nach unten */
         transform: none;
     }
 }
