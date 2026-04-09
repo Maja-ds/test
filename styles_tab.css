@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: 	#40E0D0;
+    color: yellow;
 }
 
 .text-container {
@@ -955,23 +955,9 @@ a[x-apple-data-detectors] {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 100%;           /* über dem Namen */
-    margin-bottom: 5px;
-
-    width: calc(100vw - 20px); /* fast volle Breite auf Mobil */
-    max-width: 600px;          /* Desktop-Begrenzung */
-
-    /* Höhe dynamisch: max 70% der Viewport-Höhe oder Containerhöhe */
+    top: 100%;           
+    width: 95vw; 
     max-height: 70dvh;         
     overflow-y: auto;
-
-    background: white;
-    padding: 10px 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    z-index: 9999;
-
-    transform: none;
 }
 }
