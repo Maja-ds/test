@@ -951,12 +951,4 @@ a[x-apple-data-detectors] {
     overflow-y: auto;
     position: relative;
 }
-.tooltip-name .info-text {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 50%;           
-    width: 95vw;         
-    overflow-y: auto;
-}
 }
