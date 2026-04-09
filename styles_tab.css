@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: green;
+    color: yellow;
 }
 
 .text-container {
@@ -450,9 +450,9 @@ input[type="radio"] {
     /* Checkboxen in 2 Spalten */
     .filter-box label {
         white-space: nowrap;
-        font-size: 15px !important;
         font-family: Arial !important;
         padding: 2px 10px 2px 0 !important;
+        line-height: 1.8;
     }
 
         /* Hover Effekt */
