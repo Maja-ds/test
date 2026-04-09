@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #4F7942;
+    color: #7CFC00;
 }
 
 .text-container {
@@ -274,7 +274,7 @@ div.dataTables_length select {
         width: max-content;
         overflow-wrap: break-word;
         font-family: Arial;
-        max-height: 18vh;
+        max-height: 50px;
         overflow-y: auto;
         background: white;
         color: #454545;
