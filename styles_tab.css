@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #228B22;
+    color: #FF00FF;
 }
 
 .text-container {
@@ -800,11 +800,11 @@ a[x-apple-data-detectors] {
 
     .filter-box label {
         white-space: normal;
-        font-size: 15px !important;
         padding: 3px 0 !important;      /* enger */
         display: flex;
         align-items: center;
-        gap: 6px;                       /* kleiner Abstand */
+        gap: 6px; 
+        line-height: 1.8;
     }
 
     .filter-box input[type="checkbox"] {
@@ -967,11 +967,11 @@ a[x-apple-data-detectors] {
 
     .filter-box label {
         white-space: normal;
-        font-size: 15px !important;
         padding: 3px 0 !important;      /* enger */
         display: flex;
         align-items: center;
-        gap: 6px;                       /* kleiner Abstand */
+        gap: 6px;  
+        line-height: 1.8;
     }
 
     .filter-box input[type="checkbox"] {
