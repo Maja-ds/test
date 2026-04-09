@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #00FFFF;
+    color: red;
 }
 
 .text-container {
@@ -786,6 +786,31 @@ a[x-apple-data-detectors] {
     .filter-group select::-ms-expand {
         display: none; 
     }
+        .filter-box {
+        width: auto;
+        min-width: 80vw;
+        overflow-y: scroll;
+        scrollbar-gutter: stable;
+        padding: 8px 10px;              /* kleiner */
+        max-height: 55vh;
+
+        box-sizing: border-box;
+    }
+
+
+    .filter-box label {
+        white-space: normal;
+        font-size: 15px !important;
+        padding: 3px 0 !important;      /* enger */
+        display: flex;
+        align-items: center;
+        gap: 6px;                       /* kleiner Abstand */
+    }
+
+    .filter-box input[type="checkbox"] {
+        width: 16px;                    /* nur leicht größer */
+        height: 16px;
+    }
             .tooltip-name .info-text {
         max-width: 50vw; /* max. 90% der Bildschirmbreite */
         left: 5vw;       /* zentriert mit Rand links */
@@ -954,10 +979,7 @@ a[x-apple-data-detectors] {
         width: 16px;                    /* nur leicht größer */
         height: 16px;
     }
-    .filter-box {
-    overflow-y: auto;
-    position: relative;
-}
+
     .filter-box {
     overflow-y: scroll;       /* Scrollbar immer aktiv */
     -webkit-overflow-scrolling: touch; /* flüssiges Scrollen auf iOS */
