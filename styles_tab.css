@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #93C572;
+    color: #C9CC3F;
 }
 
 .text-container {
@@ -811,11 +811,11 @@ a[x-apple-data-detectors] {
         gap: 0;
     }
     .filter-box {
-        min-width: 75vw;
+        min-width: 200px;
     }
     .filter-box label {
         font-size: 15px !important;
-        line-height: 1.8 !important;
+        line-height: 2.5 !important;
     }
     .filter-box input[type="checkbox"] {
         width: 16px;
