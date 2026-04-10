@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #AA336A;
+    color: yellow;
 }
 
 .text-container {
@@ -769,6 +769,7 @@ a[x-apple-data-detectors] {
     }
         .top {
         justify-content: unset;
+        margin-left: 0;
     }
     
     #infoButton,
@@ -791,6 +792,7 @@ a[x-apple-data-detectors] {
       }
         .result-box {
         align-items: flex-end; /* vertikal zentriert zur Linie */
+        margin-left: 0;
     }
     #filter-panel {
         gap: 0;
