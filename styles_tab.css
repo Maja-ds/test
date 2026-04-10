@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: yellow;
+    color: #E6E6FA;
 }
 
 .text-container {
@@ -761,16 +761,20 @@ a[x-apple-data-detectors] {
         width: 98%;
         padding: 0;
     }
+
+        .filter-group > *,
+        .year-fields > *,
+        .top > * {
+            width: 100%;
+        }
     
+    .top,
     .filter-group,
     .year-fields {
         flex-direction: column;
         align-items: stretch;
     }
-        .top {
-        justify-content: unset;
-        margin-left: 0;
-    }
+
     
     #infoButton,
     #bereichFilter,
@@ -792,16 +796,11 @@ a[x-apple-data-detectors] {
       }
         .result-box {
         align-items: flex-end; /* vertikal zentriert zur Linie */
-        margin-left: 0;
     }
+    
     #filter-panel {
         gap: 0;
     }
-
-.filter-line {
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
     
     #infoPopup {
         min-width: unset;
