@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: red;
+    color: #96DED1;
 }
 
 .text-container {
@@ -750,11 +750,36 @@ a[x-apple-data-detectors] {
   font-weight: inherit !important;
 }
 @media (max-width: 1024px) {
-
+        .dataTables_length {
+        display: none;
+    }
+        mark {
+        font-size: 15px;
+        font-weight: 600;
+    }
+        .radio-container {
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 0;
+    }
+    .tooltip-name .info-text {
+        max-width: 45vw; /* max. 90% der Bildschirmbreite */
+      /* zentriert mit Rand links */
+    }
+        .filter-box {
+         min-width: 30vw;
+    }
+    .filter-box label {
+        font-size: 15px !important;
+        line-height: 3 !important;
+    }
+    .filter-box input[type="checkbox"] {
+        width: 16px;
+        height: 16px;
+    }
 
 }
 /* --- Responsive für Mobilgeräte --- */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 
         .dataTables_length {
         display: none;
