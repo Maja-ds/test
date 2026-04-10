@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #AAFF00;
+    color: red;
 }
 
 .text-container {
@@ -761,7 +761,8 @@ a[x-apple-data-detectors] {
         width: 98%;
         padding: 0;
     }
-
+    
+    .top,
     .filter-group,
     .year-fields {
         flex-direction: column;
