@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #702963;
+    color: #FFEA00;
 }
 
 .text-container {
@@ -279,7 +279,7 @@ div.dataTables_length select {
         z-index: 9999;
         font-family: Arial;
         background: white;
-        color: black;
+        color: #333;
         z-index: 9999;
         line-height: 1.5;
         display: none; /* bleibt versteckt bis click/hover */
@@ -776,7 +776,7 @@ a[x-apple-data-detectors] {
     }
     
     .top {
-        gap: 5px;
+        gap: 10px;
     }
 
     .filter-line {
@@ -809,6 +809,13 @@ a[x-apple-data-detectors] {
   
     #filter-panel {
         gap: 0;
+    }
+    .filter-box {
+        min-width: 95vw;
+    }
+    .filter-box label {
+        font-size: 15px !important;
+        line-height: 1.8;
     }
     
     #infoPopup {
