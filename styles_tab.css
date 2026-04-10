@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #1F51FF;
+    color: #00A36C;
 }
 
 .text-container {
@@ -756,6 +756,10 @@ a[x-apple-data-detectors] {
 /* --- Responsive für Mobilgeräte --- */
 @media (max-width: 767px) {
 
+        .dataTables_length {
+        display: none;
+    }
+
     .table-container,
     .text-container {
         width: 98%;
@@ -811,7 +815,7 @@ a[x-apple-data-detectors] {
         gap: 0;
     }
     .filter-box {
-         width: auto;
+         min-width: 75vw;
     }
     .filter-box label {
         font-size: 15px !important;
@@ -820,21 +824,6 @@ a[x-apple-data-detectors] {
     .filter-box input[type="checkbox"] {
         width: 16px;
         height: 16px;
-    }
-
-    .dataTables_length select {
-        font-size: 16px !important;
-        transform: none !important;
-        transition: none !important;
-        animation: none !important;
-        -webkit-appearance: none !important;
-        appearance: none !important;
-    }
-     .dataTables_wrapper .dataTables_length select,
-    .dataTables_wrapper .dataTables_filter input,
-    .dataTables_wrapper .dataTables_paginate .paginate_button {
-        transition: none !important;
-        animation: none !important;
     }
     
     #infoPopup {
