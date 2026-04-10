@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #800020;
+    color: #EE4B2B;
 }
 
 .text-container {
@@ -811,7 +811,7 @@ a[x-apple-data-detectors] {
         gap: 0;
     }
     .filter-box {
-         min-width: 75vw;
+         min-width: 70vw;
     }
     .filter-box label {
         font-size: 15px !important;
@@ -829,6 +829,12 @@ a[x-apple-data-detectors] {
         animation: none !important;
         -webkit-appearance: none !important;
         appearance: none !important;
+    }
+     .dataTables_wrapper .dataTables_length select,
+    .dataTables_wrapper .dataTables_filter input,
+    .dataTables_wrapper .dataTables_paginate .paginate_button {
+        transition: none !important;
+        animation: none !important;
     }
     
     #infoPopup {
