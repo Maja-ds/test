@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #EE4B2B;
+    color: #1F51FF;
 }
 
 .text-container {
@@ -811,7 +811,7 @@ a[x-apple-data-detectors] {
         gap: 0;
     }
     .filter-box {
-         min-width: 70vw;
+         width: auto;
     }
     .filter-box label {
         font-size: 15px !important;
