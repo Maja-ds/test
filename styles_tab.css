@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #FFC0CB;
+    color: 	#088F8F;
 }
 
 .text-container {
@@ -792,6 +792,12 @@ a[x-apple-data-detectors] {
     #filter-panel {
         gap: 0;
     }
+    .filter-group {
+    margin-bottom: 0;
+}
+.filter-line {
+    margin-bottom: 10px;
+}
     
     #infoPopup {
         min-width: unset;
