@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #00A36C;
+    color: #1434A4;
 }
 
 .text-container {
@@ -748,6 +748,11 @@ a[x-apple-data-detectors] {
   font-size: inherit !important;
   font-family: inherit !important;
   font-weight: inherit !important;
+}
+@media (max-width: 1200px) {
+    .dataTables_length {
+        display: none;
+    }
 }
 @media (max-width: 1024px) {
         .dataTables_length {
