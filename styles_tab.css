@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #AA336A;
+    color: red;
 }
 
 .text-container {
@@ -750,99 +750,7 @@ a[x-apple-data-detectors] {
   font-weight: inherit !important;
 }
 @media (max-width: 1024px) {
-     #resetFilters {
-        margin-left: 0;
-        display: block;
-    }
-        .radio-container {
-        border-bottom: 1px solid #ddd;
-        padding-bottom: 12px;
-        margin-bottom: 12px;
-    }
-        .dropdown-filter:not(select) {
-        position: relative;
-    }
 
-#bereichFilter {
-        width: 200px;            /* Desktop-Breite übernehmen */
-        padding: 6px 14px; 
-        line-height: 1.5;
-        height: 32px;           /* gleiche Höhe wie Desktop */
-        text-align: center;     /* Text zentriert */
-    }
-
-        #bereichFilter {
-        position: static;   /* wichtig */
-        z-index: 10;        /* sicherstellen, dass Dropdown sichtbar ist */
-    }
-
-    /* Optional für Firefox auf Tablet */
-    .filter-group select {
-        -moz-appearance: none;
-        text-align-last: center;
-    }
-
-    /* Optional für Chrome/Safari */
-    .filter-group select::-ms-expand {
-        display: none; 
-    }
-        .filter-box {
-        width: max-content;
-        min-width: 30vw;
-        overflow-y: scroll;
-        scrollbar-gutter: stable;
-        padding: 8px 10px;              /* kleiner */
-        max-height: 55vh;
-
-        box-sizing: border-box;
-    }
-
-
-    .filter-box label {
-        white-space: normal;
-        padding: 3px 0 !important;      /* enger */
-        display: flex;
-        align-items: center;
-        gap: 6px; 
-        line-height: 1.8;
-    }
-
-    .filter-box input[type="checkbox"] {
-        width: 16px;                    /* nur leicht größer */
-        height: 16px;
-    }
-            .tooltip-name .info-text {
-        max-width: 50vw; /* max. 90% der Bildschirmbreite */
-        left: 5vw;       /* zentriert mit Rand links */
-    }
-    mark {
-        font-size: 15px;
-        font-weight: 600;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-            .filter-box {
-        width: max-content;
-        min-width: 30vw;
-        overflow-y: scroll;
-        scrollbar-gutter: stable;
-        padding: 8px 10px;              /* kleiner */
-        max-height: 55vh;
-
-        box-sizing: border-box;
-    }
-
-
-    .filter-box label {
-        white-space: normal;
-        padding: 3px 0 !important;      /* enger */
-        display: flex;
-        align-items: center;
-        color: red !important;
-        gap: 6px; 
-        line-height: 1.8;
-    }
 
 }
 /* --- Responsive für Mobilgeräte --- */
