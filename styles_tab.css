@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #1434A4;
+    color: #FF5F1F;
 }
 
 .text-container {
@@ -749,29 +749,10 @@ a[x-apple-data-detectors] {
   font-family: inherit !important;
   font-weight: inherit !important;
 }
+
 @media (max-width: 1200px) {
     .dataTables_length {
         display: none;
-    }
-}
-@media (max-width: 1024px) {
-        .dataTables_length {
-        display: none;
-    }
-        mark {
-        font-size: 15px;
-        font-weight: 600;
-    }
-        .radio-container {
-        border-bottom: 1px solid #ddd;
-        margin-top: 10px;
-    }
-    .tooltip-name .info-text {
-        max-width: 45vw; /* max. 90% der Bildschirmbreite */
-      /* zentriert mit Rand links */
-    }
-        .filter-box {
-         min-width: 25vw;
     }
     .filter-box label {
         font-size: 15px !important;
@@ -781,14 +762,30 @@ a[x-apple-data-detectors] {
         width: 16px;
         height: 16px;
     }
+}
 
+@media (max-width: 1024px) {
+
+        mark {
+        font-size: 15px;
+        font-weight: 600;
+    }
+        .radio-container {
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+    }
+
+    .tooltip-name .info-text {
+        max-width: 45vw; /* max. 90% der Bildschirmbreite */
+      /* zentriert mit Rand links */
+    }
+        .filter-box {
+         min-width: 25vw;
+    }
 }
 /* --- Responsive für Mobilgeräte --- */
 @media (max-width: 768px) {
 
-        .dataTables_length {
-        display: none;
-    }
 
     .table-container,
     .text-container {
@@ -830,7 +827,6 @@ a[x-apple-data-detectors] {
 
     .radio-container {
         border-bottom: 1px solid #ddd;
-        margin-bottom: 0;
     }
     
     .radio-container label {
@@ -846,14 +842,6 @@ a[x-apple-data-detectors] {
     }
     .filter-box {
          min-width: 70vw;
-    }
-    .filter-box label {
-        font-size: 15px !important;
-        line-height: 3 !important;
-    }
-    .filter-box input[type="checkbox"] {
-        width: 16px;
-        height: 16px;
     }
     
     #infoPopup {
