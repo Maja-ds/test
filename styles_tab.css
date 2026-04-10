@@ -775,6 +775,11 @@ a[x-apple-data-detectors] {
         align-items: stretch;
     }
 
+    .filter-line {
+        margin-bottom: 20px;
+        margin-top: 5px;
+    }
+
     
     #infoButton,
     #bereichFilter,
