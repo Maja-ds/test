@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: yellow;
+    color: #FF00FF;
 }
 
 .text-container {
@@ -854,11 +854,15 @@ a[x-apple-data-detectors] {
         flex-direction: column;
         align-items: stretch;
     }
-    .filter-group > *,
-    .year-fields > *,
-    .top > * {
-            width: 100%;
-        }
+    
+    #infoButton,
+    #bereichFilter,
+    #resetFilters,
+    .yearFilter,
+    .dropdown-filter button,
+    .filter-btn {
+        width: 100%;
+    }
     
     #infoPopup {
         min-width: unset;
