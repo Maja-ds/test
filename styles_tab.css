@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #C9A9A6;
+    color: #AA336A;
 }
 
 .text-container {
@@ -863,6 +863,11 @@ a[x-apple-data-detectors] {
     .filter-btn {
         width: 100%;
     }
+    .radio-container label {
+          line-height: 1.8;
+          display: block;
+          margin-bottom: 3px;
+      }
     
     #infoPopup {
         min-width: unset;
