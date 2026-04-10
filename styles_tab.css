@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: #C9CC3F;
+    color: red;
 }
 
 .text-container {
@@ -781,7 +781,7 @@ a[x-apple-data-detectors] {
 
     .filter-line {
         margin-bottom: 20px;
-        margin-top: 5px;
+        margin-top: 8px;
     }
 
     
@@ -811,15 +811,23 @@ a[x-apple-data-detectors] {
         gap: 0;
     }
     .filter-box {
-        min-width: 200px;
+        min-width: 70vw;
     }
     .filter-box label {
         font-size: 15px !important;
-        line-height: 2.5 !important;
+        line-height: 2.8 !important;
     }
     .filter-box input[type="checkbox"] {
         width: 16px;
         height: 16px;
+    }
+
+    .dataTables_length select {
+        transform: none !important;
+        transition: none !important;
+        animation: none !important;
+        font-size: 16px !important;  /* verhindert iOS Zoom */
+        height: 32px !important;
     }
     
     #infoPopup {
