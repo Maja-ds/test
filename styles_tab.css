@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: blue;
+    color: red;
 }
 
 .text-container {
@@ -854,112 +854,6 @@ a[x-apple-data-detectors] {
         flex-direction: column;
         align-items: stretch;
     }
-        .top {
-        gap: 8px; /* leichter Abstand zwischen Radio und Result */
-    }
-    
-    .year-fields {
-        gap: 5px;
-        margin-bottom: 0;
-    }
-    .filter-group {
-        margin-bottom: 0;
-        margin-top: 0;
-        gap: 0;
-    }
-
-        /* alle Elemente volle Breite */
-        .filter-group > *,
-        .year-fields > *,
-        .top > * {
-            width: 100%;
-        }
-    
-    .radio-container label {
-     line-height: 1.8;
-}
-
-    /* Buttons gleich breit */
-    #infoButton,
-    #bereichFilter,
-    #resetFilters,
-    .yearFilter,
-    .dropdown-filter button,
-    .filter-btn {
-        width: 100%;
-    }
-    .filter-btn,
-    .dropdown-filter,
-    .filter-group {
-        margin-top: 0;
-        gap: 0 0;
-    }
-    .dropdown-filter button {
-        margin-top: 12px;
-    }
-  
-    /* Result Box links + eine Zeile */
-
-    .yearFilter {
-        margin-bottom: 6px;
-    }
-
-    /* Optional: Labels in Year-Fields kompakter */
-    .year-fields label span {
-        margin-bottom: 1px; /* minimaler Abstand zwischen Label und Input */
-    }
-
-    /* Linie unter Radio */
-    .radio-container {
-        border-bottom: 1px solid #ddd;
-        padding-bottom: 4px; 
-        margin-bottom: 4px; 
-    }
-
-    .radio-container label {
-        line-height: 1.8;
-        display: block;
-        margin-bottom: 3px;
-    }
-
-    .result-box {
-        width: 100%;
-        margin: 0;
-        padding: 0 0;       /* kleiner Innenabstand */
-        display: flex;
-        flex-direction: row;
-        align-items: flex-end;    /* vertikal zentriert zur Linie */
-        justify-content: flex-start;
-        gap: 6px;
-        border-radius: 4px;
-        background: white;
-        border: 1.5px solid white;
-        font-family: Arial;
-        font-weight: 500;
-    }
-    
-    .table-container,
-    .text-container {
-        width: 98%;
-        padding: 0;
-    }
-
-     #infoButton {
-         margin-top: 1px;
-     }
-    
-     #resetFilters {
-         margin-top: 7px;
-         margin-bottom: 5px;
-     }
-
-    .filter-group button,
-    .filter-group select,
-    .dropdown-filter button {
-        text-align: center; /* Text zentriert */
-        padding-left: 0;
-        padding-right: 0;
-    }
     #infoPopup {
         min-width: unset;
         width: auto;
@@ -979,54 +873,7 @@ a[x-apple-data-detectors] {
             display: none; /* falls IE/Edge */
         }
 
-    .filter-box {
-        width: max-content;
-        min-width: 80vw;
-        overflow-y: scroll;
-        scrollbar-gutter: stable;
-        padding: 8px 10px;              /* kleiner */
-        max-height: 55vh;
-        box-sizing: border-box;
-    }
 
-
-    .filter-box label {
-        white-space: normal;
-        padding: 3px 0 !important;      /* enger */
-        display: flex;
-        align-items: center;
-        line-height: 1.2 !important; 
-    }
-
-    .filter-box input[type="checkbox"] {
-        width: 16px;                    /* nur leicht größer */
-        height: 16px;
-    }
-
-    .filter-box {
-    overflow-y: scroll;       /* Scrollbar immer aktiv */
-    -webkit-overflow-scrolling: touch; /* flüssiges Scrollen auf iOS */
-
-    /* Optional: optische Anpassung der Scrollbar */
-    scrollbar-width: thin;    /* Firefox */
-    scrollbar-color: #888 #f0f0f0; /* Firefox: Farbe Daumen / Track */
-}
-
-/* Webkit Browser (Chrome, Safari, Edge) */
-.filter-box::-webkit-scrollbar {
-    width: 8px;
-}
-
-.filter-box::-webkit-scrollbar-track {
-    background: #f0f0f0;
-    border-radius: 4px;
-}
-
-.filter-box::-webkit-scrollbar-thumb {
-    background-color: #888;
-    border-radius: 4px;
-    border: 2px solid #f0f0f0;
-}
         .tooltip-name .info-text {
         max-width: 70vw; /* max. 90% der Bildschirmbreite */
       /* zentriert mit Rand links */
