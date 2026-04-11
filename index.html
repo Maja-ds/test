@@ -93,11 +93,26 @@
             <div class="filter-group">
                 <div id="berufsgruppeDropdown" class="dropdown-filter"></div>
                 <!-- Bereich Dropdown -->
-                <select id="bereichFilter" class="dropdown-filter" style="display:none">
-                    <option value="Alle">Alle Berufsgruppen</option>
-                    <option value="Geisteswissenschaften">Geisteswissenschaften</option>
-                    <option value="Exakte Wissenschaften">Exakte Wissenschaften</option>
-                </select>
+ <div id="bereichFilter" class="dropdown-filter" style="display:none">
+     <button type="button" class="filter-btn">Berufsgruppe wählen</button>
+
+     <div class="filter-box">
+         <label>
+             <input type="radio" name="bereichFilter" value="Alle" checked>
+             Alle Berufsgruppen
+         </label><br>
+
+         <label>
+             <input type="radio" name="bereichFilter" value="Geisteswissenschaften">
+             Geisteswissenschaften
+         </label><br>
+
+         <label>
+             <input type="radio" name="bereichFilter" value="Exakte Wissenschaften">
+             Exakte Wissenschaften
+         </label>
+     </div>
+ </div>
                 <div id="disziplinDropdown" class="dropdown-filter"></div>
                 <div id="religionDropdown" class="dropdown-filter">
                     <button type="button" class="filter-btn">Konfession wählen</button>
