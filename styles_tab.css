@@ -816,19 +816,6 @@ a[x-apple-data-detectors] {
         max-width: 95vw;   /* begrenzt Breite */
         right: 0;          /* verhindert Überlaufen nach rechts */
     }
-    
-
-    /* Optional: bei select im Firefox */
-    .filter-group select {
-        -moz-appearance: none;
-        text-align-last: center; /* zentriert den ausgewählten Text */
-    }
-
-        /* Optional: bei Chrome/Safari */
-        .filter-group select::-ms-expand {
-            display: none; /* falls IE/Edge */
-        }
-
 
         .tooltip-name .info-text {
         max-width: 70vw; /* max. 90% der Bildschirmbreite */
