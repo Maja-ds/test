@@ -164,24 +164,53 @@ $(function () {
     }
     createBerufsgruppeDropdown();
 
-    // Disziplin Dropdown
     function createDisziplinDropdown(bereich) {
+
+        // Sicherheits-Fallback
+        if (!bereich) bereich = "Alle";
+
         let container = $('#disziplinDropdown');
         container.empty();
+
         container.append('<button type="button" class="filter-btn">Fachbereich wählen</button>');
+
         let box = $('<div class="filter-box"></div>');
-        box.append(`<label><input type="checkbox" class="disziCheckbox" value="all" checked> Alle</label><br>`);
+
+        // "Alle" immer zuerst
+        box.append(`<label>
+        <input type="checkbox" class="disziCheckbox" value="all" checked> Alle
+    </label><br>`);
+
+        // Disziplinen abhängig vom Bereich
         let disziplinen = [...new Set(
             daten
-                .filter(d => (bereich === "Alle" || d.Bereich === bereich) &&
-                    (d.Bereich === "Geisteswissenschaften" || d.Bereich === "Exakte Wissenschaften"))
+                .filter(d => {
+                    // wenn Alle → keine Einschränkung
+                    if (bereich === "Alle") return true;
+
+                    // sonst exakt matchen
+                    return d.Bereich === bereich;
+                })
                 .flatMap(d => splitValues(d.Fachbereich))
         )].sort();
-        disziplinen = disziplinen.filter(v => v !== "Sonstige")
-            .concat(disziplinen.includes("Sonstige") ? ["Sonstige"] : []);
-        disziplinen.forEach(v => box.append(`<label><input type="checkbox" class="disziCheckbox" value="${v}"> ${v}</label><br>`));
+
+        // Sonstige ans Ende
+        const ohneSonstige = disziplinen.filter(v => v !== "Sonstige");
+        const mitSonstige = disziplinen.includes("Sonstige")
+            ? [...ohneSonstige, "Sonstige"]
+            : ohneSonstige;
+
+        // Rendern
+        mitSonstige.forEach(v => {
+            box.append(`
+            <label>
+                <input type="checkbox" class="disziCheckbox" value="${v}"> ${v}
+            </label><br>
+        `);
+        });
+
         container.append(box);
-    }
+    } 
 
     function createLandDropdown() {
         let container = $('#landDropdown'); // Container div im HTML
@@ -357,12 +386,12 @@ $(function () {
         // Berufsgruppe
         let berufs = $('.berufsCheckbox:checked').map((i, e) => e.value).get();
         if (berufs.includes("all") === false && berufs.length > 0) {
-            active.push("Beruf: " + berufs.join(", "));
+            active.push("Berufsgruppe: " + berufs.join(", "));
         }
 
-        let bereich = $('#bereichFilter').val();
+        let bereich = $('#bereichFilter input:checked').val() || "Alle"
         if (bereich && bereich !== "Alle") {
-            active.push("Beruf: " + bereich);
+            active.push("Berufsgruppe: " + bereich);
         }
 
         // Disziplin
@@ -395,7 +424,7 @@ $(function () {
 
         let berufsSelected = $('.berufsCheckbox:checked').map((i, e) => e.value).get();
         if (berufsSelected.includes("all")) berufsSelected = [];
-        let bereich = $('#bereichFilter').val();
+        let bereich = $('#bereichFilter input:checked').val() || "Alle";
         let disziSelected = $('.disziCheckbox:checked').map((i, e) => e.value).get();
         if (disziSelected.includes("all")) disziSelected = [];
         let landSelected = $('.landCheckbox:checked').map((i, e) => e.value).get();
@@ -462,11 +491,27 @@ $(function () {
 
             // --- Berufsgruppe / Bereich / Disziplin ---
             if (mode === "alle") {
-                if (berufsSelected.length > 0 && !berufsSelected.some(v => splitValues(row.Berufsgruppe).includes(v))) return false;
+
+                if (
+                    berufsSelected.length > 0 &&
+                    !berufsSelected.some(v => splitValues(row.Berufsgruppe).includes(v))
+                ) return false;
+
             } else {
-                if (row.Bereich !== "Geisteswissenschaften" && row.Bereich !== "Exakte Wissenschaften") return false;
+
+                if (
+                    row.Bereich !== "Geisteswissenschaften" &&
+                    row.Bereich !== "Exakte Wissenschaften"
+                ) return false;
+
+                let bereich = $('#bereichFilter input:checked').val() || "Alle";
+
                 if (bereich !== "Alle" && row.Bereich !== bereich) return false;
-                if (disziSelected.length > 0 && !disziSelected.some(v => splitValues(row.Fachbereich).includes(v))) return false;
+
+                if (
+                    disziSelected.length > 0 &&
+                    !disziSelected.some(v => splitValues(row.Fachbereich).includes(v))
+                ) return false;
             }
 
             let religionSelected = $('input[name="religionFilter"]:checked').map((i, e) => e.value).get();
@@ -528,10 +573,14 @@ $(function () {
 
         applyFilter();
     });
-    $('#bereichFilter').on('change', function () {
-        createDisziplinDropdown($(this).val());
+    $(document).on('change', '#bereichFilter input', function () {
+
+        const bereich = $('#bereichFilter input:checked').val() || "Alle";
+
+        createDisziplinDropdown(bereich);
         applyFilter();
     });
+
     $(document).on('change', '.disziCheckbox', function () {
         const isAll = $(this).val() === "all";
         const box = $(this).closest('.filter-box');
@@ -604,8 +653,10 @@ $(function () {
         $('.berufsCheckbox[value="all"]').prop('checked', true);
 
         // Bereich + Disziplin (Kernmodus)
-        $('#bereichFilter').val('Alle');
         createDisziplinDropdown("Alle");
+
+        $('#bereichFilter input').prop('checked', false);
+        $('#bereichFilter input[value="Alle"]').prop('checked', true);
 
         // Religion
         $('input[name="religionFilter"]').prop('checked', false);
@@ -669,8 +720,10 @@ $(function () {
                 $('#berufsgruppeDropdown').hide();
                 $('#bereichFilter').show();
 
-                createDisziplinDropdown($('#bereichFilter').val());
+                const bereich = "Alle";
                 $('#disziplinDropdown').show();
+                createDisziplinDropdown(bereich);
+                
 
                 let kerngruppeData = daten.filter(d => d.Bereich && d.Bereich.trim() !== "");
 
