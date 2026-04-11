@@ -50,7 +50,7 @@ li {
 
 h1 {
     font-weight: 500;
-    color: green;
+    color: red;
 }
 
 .text-container {
@@ -784,7 +784,6 @@ a[x-apple-data-detectors] {
 
     
     #infoButton,
-    #bereichFilter,
     #resetFilters,
     .yearFilter,
     .dropdown-filter button,
